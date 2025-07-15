@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register | PrepMate</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Load reusable navbar -->
+  <div id="navbar"></div>
+
+  <h2 style="text-align:center;">Register</h2>
+  <form style="max-width:400px;margin:0 auto;" action="#" method="post">
+    <input type="text" placeholder="Full Name" required style="width:100%;padding:10px;margin:10px 0;">
+    <input type="email" placeholder="Email" required style="width:100%;padding:10px;margin:10px 0;">
+    <input type="password" placeholder="Password" required style="width:100%;padding:10px;margin:10px 0;">
+    <button type="submit" style="width:100%;padding:10px;background:#007bff;color:white;border:none;">Register</button>
+  </form>
+
+  <!-- Load reusable footer -->
+  <div id="footer"></div>
+
+  <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar').innerHTML = data);
+
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+</body>
+
+  <!-- Footer -->
+  <footer style="background:#222; color:white; text-align:center; padding:15px; margin-top:40px;">
+    &copy; 2025 PrepMate. All rights reserved.
+  </footer>
+
+</body>
+</html>
