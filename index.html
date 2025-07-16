@@ -4,25 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PrepMate – Placement Preparation Hub</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84...SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   <link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="logo">
-      <a href="index.html">PrepMate</a>
-    </div>
-    <ul class="nav-links">
-      <li><a href="study-rooms.html">Study Rooms</a></li>
-      <li><a href="dsa.html">DSA</a></li>
-      <li><a href="aptitude.html">Aptitude</a></li>
-      <li><a href="companies.html">Company Prep</a></li>
-    </ul>
-    <div class="right-nav">
-      <a href="login.html" class="login-btn">Login</a>
-    </div>
-  </nav>
+  <!-- Header with Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">PrepMate</a>
+      </div>
 
+      <ul class="nav-links">
+        <li><a href="study-rooms.html">Study Rooms</a></li>
+        <li><a href="dsa.html">DSA</a></li>
+        <li><a href="aptitude.html">Aptitude</a></li>
+        <li><a href="companies.html">Company Prep</a></li>
+      </ul>
+
+      <div class="right-nav">
+        <div class="search-bar">
+          <input type="text" placeholder="Search topics or questions..." />
+        </div>
+
+        <div class="streaks">
+          <a href="dsa-streak.html"><span title="DSA Streak 🔥">🔥</span></a>
+          <a href="aptitude-streak.html"><span title="Aptitude Streak 📈">📈</span></a>
+        </div>
+
+        <div class="profile">
+          <a href="login.html">Login</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
   <section class="hero">
     <h2>Prepare Smarter. Together.</h2>
     <p>Collaborate with peers, share resources, and ace your placement journey with PrepMate.</p>
@@ -32,19 +56,36 @@
     </div>
   </section>
 
+  <!-- Features Section -->
   <section class="features">
     <h3>Key Features</h3>
     <div class="feature-grid">
-      <div class="feature"><h4>Study Rooms</h4><p>Create or join topic rooms and discuss in real-time.</p></div>
-      <div class="feature"><h4>DSA for Placement</h4><p>Practice coding questions with topic-wise sets.</p></div>
-      <div class="feature"><h4>Aptitude Quiz</h4><p>Sharpen your placement aptitude skills.</p></div>
-      <div class="feature"><h4>Company Prep</h4><p>Access real interview questions & tips.</p></div>
-      <div class="feature"><h4>Monthly Goal Tracker</h4><p>Track your goals and consistency.</p></div>
+      <div class="feature">
+        <h4>Study Rooms</h4>
+        <p>Create or join rooms by topic and discuss with peers in real-time.</p>
+      </div>
+      <div class="feature">
+        <h4>DSA for Placement</h4>
+        <p>Master frequently asked coding questions with topic-wise DSA sets tailored for top placement interviews.</p>
+      </div>
+      <div class="feature">
+        <h4>Aptitude Quiz</h4>
+        <p>Take timed aptitude quizzes to sharpen your placement skills.</p>
+      </div>
+      <div class="feature">
+        <h4>Company Prep</h4>
+        <p>Access real interview questions and tips for top companies.</p>
+      </div>
+      <div class="feature">
+        <h4>Monthly Goal Tracker</h4>
+        <p>Set study goals and monitor your consistency and progress.</p>
+      </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    &copy; 2025 PrepMate. All rights reserved.
+    &copy; 2025 PrepMate. Built by students, for students.
   </footer>
 
 </body>
