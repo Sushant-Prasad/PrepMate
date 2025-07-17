@@ -1,0 +1,78 @@
+/* Two-column layout */
+.companies-layout {
+  flex: 1;
+  display: flex;
+  gap: 1px;
+  padding: rem;
+  background-color: #fff
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  min-width: 250px;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid #ddd;
+  background-color: #0cf4c6;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar h3 {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Search input */
+.sidebar-search input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #dd8484;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Company list */
+.company-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.company-list li a {
+  color: #120404;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.company-list li a:hover {
+  color: #0d6efd;
+}
+
+
+/* Right-side content */
+.content-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f5f9;
+  padding: 1px;
+  border-radius: 10px;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.banner-image {
+  flex: 1;
+  text-align: center;
+}
+
+.banner-img {
+  width: 100%;
+  border-radius: 1px;
+}
