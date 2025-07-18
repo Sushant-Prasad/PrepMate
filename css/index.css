@@ -1,5 +1,3 @@
-
-
 /* Hero section */
 .hero {
   padding: 4rem 2rem;
@@ -53,8 +51,8 @@
 }
 
 .feature {
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
+  background: #4dcba3;
+  border: 1px solid #010711;
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -68,6 +66,57 @@
 .feature p {
   color: #4b5563;
   font-size: 0.95rem;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 3rem 2rem;
+  background: linear-gradient(to right, #f3f4f6, #e0f2fe);
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.about-us h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #0d6efd;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.about-content p {
+  font-size: 1.15rem;
+  color: #374151;
+  text-align: center;
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+  .right-nav {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 
 
