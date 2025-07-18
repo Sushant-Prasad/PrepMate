@@ -4,89 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PrepMate – Placement Preparation Hub</title>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84...SVk9ABhg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Header with Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="index.html">PrepMate</a>
-      </div>
-
-      <ul class="nav-links">
-        <li><a href="study-rooms.html">Study Rooms</a></li>
-        <li><a href="dsa.html">DSA</a></li>
-        <li><a href="aptitude.html">Aptitude</a></li>
-        <li><a href="companies.html">Company Prep</a></li>
-      </ul>
-
-      <div class="right-nav">
-        <div class="search-bar">
-          <input type="text" placeholder="Search topics or questions..." />
-        </div>
-
-        <div class="streaks">
-          <a href="dsa-streak.html"><span title="DSA Streak 🔥">🔥</span></a>
-          <a href="aptitude-streak.html"><span title="Aptitude Streak 📈">📈</span></a>
-        </div>
-
-        <div class="profile">
-          <a href="login.html">Login</a>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Prepare Smarter. Together.</h2>
-    <p>Collaborate with peers, share resources, and ace your placement journey with PrepMate.</p>
-    <div class="cta-buttons">
-      <a href="login.html">Get Started</a>
-      <a href="dashboard.html">Explore Dashboard</a>
+  <nav>
+    <div class="logo">PrepMate</div>
+    <div class="nav-links">
+      <a href="#">Study Rooms</a>
+      <a href="#">DSA</a>
+      <a href="#">Aptitude</a>
+      <a href="#">Companies</a>
     </div>
-  </section>
+    <button class="btn">Sign In</button>
+  </nav>
 
-  <!-- Features Section -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Elevate Your Placement Preparation</h1>
+      <div class="btns">
+        <button class="btn primary">Get Started - It's Free</button>
+        <button class="btn">Explore Features</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1588072432904-843af37f03ed?auto=format&fit=crop&w=1000&q=80" alt="Student" />
+    </div>
+  </div>
+
+  <div class="search-container">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search for interview questions, companies, or topics..." />
+  </div>
+
   <section class="features">
-    <h3>Key Features</h3>
+    <h2>Comprehensive Placement Preparation</h2>
     <div class="feature-grid">
-      <div class="feature">
-        <h4>Study Rooms</h4>
-        <p>Create or join rooms by topic and discuss with peers in real-time.</p>
+      <div class="feature-card">
+        <i class="fas fa-users"></i>
+        <h3>Study Rooms</h3>
+        <p>Collaborate with peers in real-time study rooms</p>
       </div>
-      <div class="feature">
-        <h4>DSA for Placement</h4>
-        <p>Master frequently asked coding questions with topic-wise DSA sets tailored for top placement interviews.</p>
+      <div class="feature-card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>DSA Practice</h3>
+        <p>Master data structures and algorithms with our curated problems</p>
       </div>
-      <div class="feature">
-        <h4>Aptitude Quiz</h4>
-        <p>Take timed aptitude quizzes to sharpen your placement skills.</p>
+      <div class="feature-card">
+        <i class="fas fa-calendar-alt"></i>
+        <h3>Company Schedules</h3>
+        <p>Track upcoming company recruitment timelines</p>
       </div>
-      <div class="feature">
-        <h4>Company Prep</h4>
-        <p>Access real interview questions and tips for top companies.</p>
-      </div>
-      <div class="feature">
-        <h4>Monthly Goal Tracker</h4>
-        <p>Set study goals and monitor your consistency and progress.</p>
+      <div class="feature-card">
+        <i class="fas fa-clock"></i>
+        <h3>Mock Interviews</h3>
+        <p>Practice with timed mock interviews and get feedback</p>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 PrepMate. Built by students, for students.
-  </footer>
+  <section class="form-section" id="login">
+    <h2>Login</h2>
+    <input type="email" placeholder="Email" required />
+    <input type="password" placeholder="Password" required />
+    <button>Login</button>
+    <div class="form-toggle">
+      Don’t have an account? <a href="#register">Register</a>
+    </div>
+  </section>
 
+  <section class="form-section" id="register">
+    <h2>Register</h2>
+    <input type="text" placeholder="Full Name" required />
+    <input type="email" placeholder="Email" required />
+    <input type="password" placeholder="Password" required />
+    <button>Register</button>
+    <div class="form-toggle">
+      Already have an account? <a href="#login">Login</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 PrepMate Technologies. All rights reserved.
+  </footer>
 </body>
 </html>
