@@ -31,6 +31,22 @@
   background-color: #0b5ed7;
 }
 
+.hero-img-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.hero-img {
+  max-width: 420px;
+  max-height: 280px;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  object-fit: cover;
+}
+
 /* Features Section */
 .features {
   padding: 3rem 2rem;
