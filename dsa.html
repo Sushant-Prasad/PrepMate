@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrepMate - Start Your Journey with DSA</title>
+    <link rel="stylesheet" href="./css/DsaPage.css" />
+</head>
+
+<body>
+
+    <!-- ✅ Navbar -->
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
+            <div class="logo">
+                <a href="index.html">PrepMate<span></span></a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="study-rooms.html">Study Rooms</a></li>
+                <li><a href="dsa.html" class="active">DSA</a></li>
+                <li><a href="aptitude.html">Aptitude</a></li>
+                <li><a href="companies.html">Company Prep</a></li>
+            </ul>
+
+            <div class="right-nav">
+                <!-- 🔍 Search -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Search topics or questions..." aria-label="Search topics" />
+                </div>
+
+                <!-- 🔥 Streaks -->
+                <div class="streaks">
+                    <a href="dsa-streak.html" title="DSA Streak 🔥">🔥</a>
+                    <a href="aptitude-streak.html" title="Aptitude Streak 📈">📈</a>
+                </div>
+
+                <!-- 👤 Profile -->
+                <div class="profile">
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ✅ Main DSA Layout -->
+    <main class="dsa-container">
+
+        <!-- 🧭 Sidebar -->
+        <aside class="sidebar" aria-label="DSA Topics Sidebar">
+            <h3>DSA Topics</h3>
+            <ul id="topics-list">
+                <li onclick="loadTopic('fundamentals')">Programming Fundamentals</li>
+                <li onclick="loadTopic('basic-ds')">Basic Data Structures</li>
+                <li onclick="loadTopic('trees')">Trees</li>
+                <li onclick="loadTopic('recursion')">Recursion & Backtracking</li>
+                <li onclick="loadTopic('hashing')">Hashing</li>
+                <li onclick="loadTopic('sliding-window')">Sliding Window & Two Pointer</li>
+                <li onclick="loadTopic('searching-sorting')">Searching & Sorting</li>
+                <li onclick="loadTopic('greedy')">Greedy Algorithms</li>
+                <li onclick="loadTopic('dp')">Dynamic Programming</li>
+                <li onclick="loadTopic('graph')">Graph Algorithms</li>
+                <li onclick="loadTopic('cp')">Competitive Programming</li>
+            </ul>
+        </aside>
+
+        <!-- 📚 Dynamic Content Area -->
+        <section class="topic-content" id="topic-content" aria-live="polite">
+            <div class="topic-placeholder">
+                <img src="https://cdn-icons-png.flaticon.com/512/481/481960.png" alt="DSA Preparation" />
+                <h2>Start Your DSA Preparation</h2>
+                <p>Select a topic from the left panel to begin solving structured problem sets.</p>
+                <p class="subline">Practice consistently. Improve gradually. Achieve excellence.</p>
+                <button onclick="motivateMe()" class="motivator-btn">Inspire Me</button>
+                <p id="motivation-line" class="motivator-text"></p>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- ✅ Footer -->
+    <footer>
+        &copy; 2025 PrepMate. Built by students, for students.
+    </footer>
+
+    <!-- ✅ JavaScript -->
+    <script src="./data/DsaPage.js"></script>
+</body>
+
+</html>
