@@ -57,8 +57,20 @@ body {
 header {
   width: 100%;
 }
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* navbar */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f6fc;
+  color: #333;
+}
+
+/* ================= NAVBAR ================== */
 .navbar {
   background-color: var(--primary-color);
   padding: 1rem 2rem;
@@ -72,70 +84,116 @@ header {
   top: 0;
 }
 
-
-.logo a {
+.navbar .logo a {
   font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
   color: #0d6efd;
 }
 
-.nav-links {
+.navbar .nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
   margin-left: 1rem;
 }
 
-.nav-links a {
+.navbar .nav-links a {
   text-decoration: none;
   font-weight: 600;
   color: #333;
 }
 
-.nav-links a:hover {
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
   color: #0d6efd;
 }
 
-.right-nav {
+/* ================== MAIN =================== */
+.container {
   display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
+  height: calc(100vh - 60px); /* Navbar height is 60px approx */
 }
 
-/* Search bar */
-.search-bar input {
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  outline: none;
-  width: 200px;
-}
-
-/* Streak icons */
-.streaks span {
-  font-size: 1.2rem;
-  margin: 0 4px;
-  cursor: default;
-}
-
-/* Profile/Login */
-.profile a {
-  background-color: #0d6efd;
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background-color: #0a192f;
   color: white;
-  padding: 6px 12px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  color: #64ffda;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.sidebar ul li {
+  list-style: none;
+  margin-bottom: 12px;
+  padding: 10px 15px;
   border-radius: 6px;
-  text-decoration: none;
+  background-color: #112240;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.sidebar ul li:hover {
+  background-color: #233554;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 30px;
+  background-color: #eaf2fb;
+  overflow-y: auto;
+}
+
+.topic-details {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.topic-details h2 {
+  margin-bottom: 10px;
+  color: #0a192f;
+}
+
+.topic-details p {
+  margin-bottom: 20px;
+}
+
+.topic-details .actions {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #64ffda;
+  color: black;
   font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.profile a:hover {
-  background-color: #0b5ed7;
+button:hover {
+  background-color: #52e0c4;
 }
 
-/* Footer */
+/* ================== FOOTER =================== */
 footer {
   text-align: center;
   padding: 1rem;
