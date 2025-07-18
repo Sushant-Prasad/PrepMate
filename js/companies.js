@@ -1,3 +1,8 @@
+const companyList = document.getElementById("companyList");
+const dsaContent = document.getElementById("dsaContent");
+const aptitudeContent = document.getElementById("aptitudeContent");
+const companyTitle = document.getElementById("companyTitle");
+
 companyQues = [
   {
     id: 1,
@@ -682,3 +687,55 @@ companyQues = [
     },
   },
 ];
+
+// ✅ Clear any previous entries
+companyList.innerHTML = "";
+
+// ✅ Create unique sidebar links with event listeners
+companyQues.forEach((companyObj) => {
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#";
+  a.textContent = companyObj.companyName;
+  a.addEventListener("click", () => showCompanyData(companyObj.companyName));
+  li.appendChild(a);
+  companyList.appendChild(li);
+});
+
+//Function to show DSA & Aptitude
+function showCompanyData(companyName) {
+  const companyData = companyQues.find((c) => c.companyName === companyName);
+  if (!companyData) return;
+
+  companyTitle.textContent = companyName;
+  dsaContent.innerHTML = "";
+  aptitudeContent.innerHTML = "";
+
+  //DSA
+  for (const topic in companyData.dsa) {
+    const topicBlock = document.createElement("div");
+    topicBlock.innerHTML = `<h4>${topic}</h4>`;
+    companyData.dsa[topic].forEach((q) => {
+      topicBlock.innerHTML += `
+        <div class="question-card">
+          <a href="${q.link}" target="_blank">${q.title}</a>
+          <span>Difficulty: ${q.difficulty}</span>
+        </div>`;
+    });
+    dsaContent.appendChild(topicBlock);
+  }
+
+  //Aptitude
+  for (const topic in companyData.aptitude) {
+    const topicBlock = document.createElement("div");
+    topicBlock.innerHTML = `<h4>${topic}</h4>`;
+    companyData.aptitude[topic].forEach((q) => {
+      topicBlock.innerHTML += `
+        <div class="question-card">
+          <a href="${q.link}" target="_blank">${q.title}</a>
+          <span>Difficulty: ${q.difficulty}</span>
+        </div>`;
+    });
+    aptitudeContent.appendChild(topicBlock);
+  }
+}

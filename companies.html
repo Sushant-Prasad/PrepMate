@@ -4,15 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PrepMate – Company-wise Prep</title>
-
-    <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/companies.css" />
@@ -50,44 +47,43 @@
     </header>
 
     <section class="companies-layout">
-     <!-- Sidebar -->
-<aside class="sidebar">
-  <h3>Companies</h3>
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h3>Companies</h3>
+        <!-- Searchbar inside sidebar -->
+        <div class="sidebar-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            placeholder="Search companies..."
+            id="companySearch"
+          />
+        </div>
 
-  <!-- Search bar inside sidebar -->
-  <div class="sidebar-search">
-    <input type="text" placeholder="Search companies..." id="companySearch" />
-  </div>
-
-  <!-- Company list -->
-  <ul class="company-list" id="companyList">
-    <li><a href="#">Amazon</a></li>
-    <li><a href="#">Google</a></li>
-    <li><a href="#">Microsoft</a></li>
-    <li><a href="#">TCS</a></li>
-    <li><a href="#">Infosys</a></li>
-    <li><a href="#">Wipro</a></li>
-    <li><a href="#">Capgemini</a></li>
-    <li><a href="#">Accenture</a></li>
-    <!-- Add more -->
-  </ul>
-</aside>
-
+        <!-- Company list -->
+        <ul class="company-list" id="companyList"></ul>
+      </aside>
 
       <!-- Right content -->
-<div class="content-banner">
-  <div class="banner-image">
-    <img
-      src="image/img1.png"
-      alt="Company Prep Banner"
-      class="banner-img"
-    />
-  </div>
-</div>
-
+      <div class="content-banner">
+        <div class="company-content">
+          <h2 id="companyTitle">Select a company to view questions</h2>
+          <div class="questions-section">
+            <div class="dsa-section">
+              <h3>DSA Questions</h3>
+              <div id="dsaContent"></div>
+            </div>
+            <div class="aptitude-section">
+              <h3>Aptitude Questions</h3>
+              <div id="aptitudeContent"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>&copy; 2025 PrepMate. Built by students, for students.</footer>
+    <script src="js/companies.js"></script>
   </body>
 </html>
