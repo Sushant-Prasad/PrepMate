@@ -4,54 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PrepMate – Placement Preparation Hub</title>
-    <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-  integrity="sha512-Evv84...SVk9ABhg=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-      <header>
-        <nav class="navbar">
-          <div class="logo">
-            <a href="index.html">PrepMate</a>
-          </div>
-
-          <ul class="nav-links">
-            <li><a href="study-rooms.html">Study Rooms</a></li>
-            <li><a href="dsa.html">DSA</a></li>
-            <li><a href="aptitude.html">Aptitude</a></li>
-            <li><a href="companies.html">Company Prep</a></li>
-          </ul>
-
-          <div class="right-nav">
-            <div class="search-bar">
-              <input type="text" placeholder="Search topics or questions..." />
-            </div>
-
-            <div class="streaks">
-              <a href="dsa-streak.html"
-                ><span title="DSA Streak 🔥">🔥</span></a
-              >
-              <a href="aptitude-streak.html"
-                ><span title="Aptitude Streak 📈">📈</span></a
-              >
-            </div>
-
-            <div class="profile">
-              <a href="login.html">Login</a>
-            </div>
-          </div>
-        </nav>
-      </header>
+      <my-nav> </my-nav>
     <section class="hero">
       <div class="hero-img-wrapper">
-        <img src="image/study.jpg" alt="studying together" class="hero-img" />
+        <div class="hero-slider">
+          <img src="image/study.jpg" alt="studying together" class="hero-img active" />
+          <img src="image/group dis.png" alt="group discussion" class="hero-img" />
+          <img src="image/coding.jpg" alt="coding session" class="hero-img" />
+          <img src="image/examprep.jpg" alt="exam prep" class="hero-img" />
+          <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+          <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
       </div>
       <h2>Prepare Smarter. Together.</h2>
       <p>
@@ -59,7 +27,7 @@
         with PrepMate.
       </p>
       <div class="cta-buttons">
-        <a href="login.html">Get Started</a>
+        <a href="registration.html">Get Started</a>
         <a href="dashboard.html">Explore Dashboard</a>
       </div>
     </section>
@@ -96,7 +64,6 @@
       </div>
     </section>
 
-    
     <section class="about-us">
       <h3>About Us</h3>
       <div class="about-content">
@@ -106,6 +73,27 @@
       </div>
     </section>
 
-    <footer>&copy; 2025 PrepMate. Built by students, for students.</footer>
+    <!-- Website Stats Section -->
+    <section class="stats-section">
+      <h3 class="stats-title">PrepMate Stats</h3>
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-number">12,500+</div>
+          <div class="stat-label">Subscribers</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">2,300+</div>
+          <div class="stat-label">Daily Active Users</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number"><i class="fas fa-trophy" style="color:#FFD700;"></i> 5</div>
+          <div class="stat-label">Awards Won</div>
+        </div>
+      </div>
+    </section>
+
+    <my-foot></my-foot>
+    <script src="js/nav.js"></script>
+    <script src="js/index.js"> </script>
   </body>
 </html>

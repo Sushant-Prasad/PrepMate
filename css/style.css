@@ -22,11 +22,11 @@ ul,ol{
 }
 /* variable define */
 :root{
-  --primary-color:#FFC107;
+  --primary-color:#D9EAFD;
   --secondary-color:#0DCAF0;
 
   --third-color:#f98169;
-  --hover-color:#e70c7d;
+  --hover-color:#0ce76f;
   --bg-color:#D5EFFA;
   --bg2-color:#FFFFFF;
   --white-color:#fff;
