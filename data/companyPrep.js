@@ -28,34 +28,228 @@ companyQues = [
         },
       ],
     },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
+    aptitude:  [
+      {
+        category: "Numerical Ability",
+        title: "Profit and Loss",
+        link: "https://example.com/amazon/aptitude/profit-loss",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Numerical Ability",
+        title: "Simple Interest",
+        link: "https://example.com/amazon/aptitude/simple-interest",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Reasoning",
+        title: "Blood Relations",
+        link: "https://example.com/amazon/aptitude/blood-relations",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Verbal Ability",
+        title: "Synonyms",
+        link: "https://example.com/amazon/aptitude/synonyms",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 2,
@@ -86,34 +280,228 @@ companyQues = [
         },
       ],
     },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
+    aptitude:  [
+      {
+        category: "Numerical Ability",
+        title: "Profit and Loss",
+        link: "https://example.com/amazon/aptitude/profit-loss",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Numerical Ability",
+        title: "Simple Interest",
+        link: "https://example.com/amazon/aptitude/simple-interest",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Reasoning",
+        title: "Blood Relations",
+        link: "https://example.com/amazon/aptitude/blood-relations",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Verbal Ability",
+        title: "Synonyms",
+        link: "https://example.com/amazon/aptitude/synonyms",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 3,
@@ -144,34 +532,228 @@ companyQues = [
         },
       ],
     },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
+    aptitude:  [
+      {
+        category: "Numerical Ability",
+        title: "Profit and Loss",
+        link: "https://example.com/amazon/aptitude/profit-loss",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Numerical Ability",
+        title: "Simple Interest",
+        link: "https://example.com/amazon/aptitude/simple-interest",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Reasoning",
+        title: "Blood Relations",
+        link: "https://example.com/amazon/aptitude/blood-relations",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Verbal Ability",
+        title: "Synonyms",
+        link: "https://example.com/amazon/aptitude/synonyms",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 4,
@@ -202,34 +784,228 @@ companyQues = [
         },
       ],
     },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
+    aptitude:  [
+      {
+        category: "Numerical Ability",
+        title: "Profit and Loss",
+        link: "https://example.com/amazon/aptitude/profit-loss",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Numerical Ability",
+        title: "Simple Interest",
+        link: "https://example.com/amazon/aptitude/simple-interest",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Reasoning",
+        title: "Blood Relations",
+        link: "https://example.com/amazon/aptitude/blood-relations",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Verbal Ability",
+        title: "Synonyms",
+        link: "https://example.com/amazon/aptitude/synonyms",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 5,
@@ -260,34 +1036,228 @@ companyQues = [
         },
       ],
     },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
+    aptitude:  [
+      {
+        category: "Numerical Ability",
+        title: "Profit and Loss",
+        link: "https://example.com/amazon/aptitude/profit-loss",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Numerical Ability",
+        title: "Simple Interest",
+        link: "https://example.com/amazon/aptitude/simple-interest",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Reasoning",
+        title: "Blood Relations",
+        link: "https://example.com/amazon/aptitude/blood-relations",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Verbal Ability",
+        title: "Synonyms",
+        link: "https://example.com/amazon/aptitude/synonyms",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 6,
@@ -318,34 +1288,228 @@ companyQues = [
         },
       ],
     },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
+    aptitude:  [
+      {
+        category: "Numerical Ability",
+        title: "Profit and Loss",
+        link: "https://example.com/amazon/aptitude/profit-loss",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Numerical Ability",
+        title: "Simple Interest",
+        link: "https://example.com/amazon/aptitude/simple-interest",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Reasoning",
+        title: "Blood Relations",
+        link: "https://example.com/amazon/aptitude/blood-relations",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Verbal Ability",
+        title: "Synonyms",
+        link: "https://example.com/amazon/aptitude/synonyms",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 7,
@@ -376,34 +1540,228 @@ companyQues = [
         },
       ],
     },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
+    aptitude:  [
+      {
+        category: "Numerical Ability",
+        title: "Profit and Loss",
+        link: "https://example.com/amazon/aptitude/profit-loss",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Numerical Ability",
+        title: "Simple Interest",
+        link: "https://example.com/amazon/aptitude/simple-interest",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Reasoning",
+        title: "Blood Relations",
+        link: "https://example.com/amazon/aptitude/blood-relations",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Verbal Ability",
+        title: "Synonyms",
+        link: "https://example.com/amazon/aptitude/synonyms",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 8,
@@ -434,34 +1792,228 @@ companyQues = [
         },
       ],
     },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
+    aptitude:  [
+      {
+        category: "Numerical Ability",
+        title: "Profit and Loss",
+        link: "https://example.com/amazon/aptitude/profit-loss",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Numerical Ability",
+        title: "Simple Interest",
+        link: "https://example.com/amazon/aptitude/simple-interest",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Reasoning",
+        title: "Blood Relations",
+        link: "https://example.com/amazon/aptitude/blood-relations",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Verbal Ability",
+        title: "Synonyms",
+        link: "https://example.com/amazon/aptitude/synonyms",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 9,
@@ -492,34 +2044,228 @@ companyQues = [
         },
       ],
     },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
+    aptitude:  [
+      {
+        category: "Numerical Ability",
+        title: "Profit and Loss",
+        link: "https://example.com/amazon/aptitude/profit-loss",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Numerical Ability",
+        title: "Simple Interest",
+        link: "https://example.com/amazon/aptitude/simple-interest",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Reasoning",
+        title: "Blood Relations",
+        link: "https://example.com/amazon/aptitude/blood-relations",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Verbal Ability",
+        title: "Synonyms",
+        link: "https://example.com/amazon/aptitude/synonyms",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 10,
@@ -550,38 +2296,232 @@ companyQues = [
         },
       ],
     },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
+    aptitude:  [
+      {
+        category: "Numerical Ability",
+        title: "Profit and Loss",
+        link: "https://example.com/amazon/aptitude/profit-loss",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Numerical Ability",
+        title: "Simple Interest",
+        link: "https://example.com/amazon/aptitude/simple-interest",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Reasoning",
+        title: "Blood Relations",
+        link: "https://example.com/amazon/aptitude/blood-relations",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Verbal Ability",
+        title: "Synonyms",
+        link: "https://example.com/amazon/aptitude/synonyms",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 11,
-    companyName: "Paytn",
+    companyName: "Paytm",
     dsa: {
       Arrays: [
         {
@@ -608,34 +2548,228 @@ companyQues = [
         },
       ],
     },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
+    aptitude:  [
+      {
+        category: "Numerical Ability",
+        title: "Profit and Loss",
+        link: "https://example.com/amazon/aptitude/profit-loss",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Numerical Ability",
+        title: "Simple Interest",
+        link: "https://example.com/amazon/aptitude/simple-interest",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Reasoning",
+        title: "Blood Relations",
+        link: "https://example.com/amazon/aptitude/blood-relations",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Verbal Ability",
+        title: "Synonyms",
+        link: "https://example.com/amazon/aptitude/synonyms",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+    ],
   },
 
   {
@@ -657,28 +2791,227 @@ companyQues = [
         },
       ],
     },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Time and Work",
-          difficulty: "Medium",
-          link: "https://example.com/tcs/aptitude/time-work",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Number Series",
-          difficulty: "Medium",
-          link: "https://example.com/tcs/aptitude/number-series",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Reading Comprehension",
-          difficulty: "Medium",
-          link: "https://example.com/tcs/aptitude/reading-comprehension",
-        },
-      ],
-    },
+    aptitude:  [
+      {
+        category: "Numerical Ability",
+        title: "Profit and Loss",
+        link: "https://example.com/amazon/aptitude/profit-loss",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Numerical Ability",
+        title: "Simple Interest",
+        link: "https://example.com/amazon/aptitude/simple-interest",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Reasoning",
+        title: "Blood Relations",
+        link: "https://example.com/amazon/aptitude/blood-relations",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+      {
+        category: "Verbal Ability",
+        title: "Synonyms",
+        link: "https://example.com/amazon/aptitude/synonyms",
+        questions: [
+          {
+            id: "1",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "2",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "3",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+          {
+            id: "4",
+            statement:
+              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+            options: {
+              A: "4.5%",
+              B: "5%",
+              C: "10%",
+              D: "12%",
+            },
+            answer: "C",
+          },
+        ],
+      },
+    ],
   },
 ];

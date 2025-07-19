@@ -21,24 +21,20 @@
         <div class="logo">
           <a href="index.html">PrepMate</a>
         </div>
-
         <ul class="nav-links">
           <li><a href="study-rooms.html">Study Rooms</a></li>
           <li><a href="dsa.html">DSA</a></li>
           <li><a href="aptitude.html">Aptitude</a></li>
           <li><a href="companies.html">Company Prep</a></li>
         </ul>
-
         <div class="right-nav">
           <div class="search-bar">
             <input type="text" placeholder="Search topics or questions..." />
           </div>
-
           <div class="streaks">
             <a href="dsa-streak.html" title="DSA Streak 🔥">🔥</a>
             <a href="aptitude-streak.html" title="Aptitude Streak 📈">📈</a>
           </div>
-
           <div class="profile">
             <a href="login.html">Login</a>
           </div>
@@ -46,11 +42,11 @@
       </nav>
     </header>
 
+    <!-- Main Layout -->
     <section class="companies-layout">
       <!-- Sidebar -->
       <aside class="sidebar">
         <h3>Companies</h3>
-        <!-- Searchbar inside sidebar -->
         <div class="sidebar-search">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input
@@ -59,23 +55,37 @@
             id="companySearch"
           />
         </div>
-
-        <!-- Company list -->
-        <ul class="company-list" id="companyList"></ul>
+        <ul class="company-list" id="companyList">
+          <!-- Companies injected via JS -->
+        </ul>
       </aside>
 
-      <!-- Right content -->
+      <!-- Main Content -->
       <div class="content-banner">
-        <div class="company-content">
-          <h2 id="companyTitle">Select a company to view questions</h2>
-          <div class="questions-section">
-            <div class="dsa-section">
-              <h3>DSA Questions</h3>
-              <div id="dsaContent"></div>
+        <div class="company-content" id="companyContent">
+          <!-- Placeholder before selection -->
+          <div id="placeholderMessage">
+            <h2>Your Placement Preparation Starts Here.</h2>
+            <p>
+              Master company-specific DSA problems & Aptitude questions here.
+            </p>
+          </div>
+
+          <!-- Tabs and content (initially hidden) -->
+          <div class="tab-section" id="tabSection" style="display: none;">
+            <!-- Tabs -->
+            <div class="tabs">
+              <button id="dsaTab" class="active">DSA</button>
+              <button id="aptitudeTab">Aptitude</button>
             </div>
-            <div class="aptitude-section">
-              <h3>Aptitude Questions</h3>
-              <div id="aptitudeContent"></div>
+
+            <!-- Tab Content -->
+            <div id="dsaContent" class="tab-content">
+              <!-- DSA questions will be injected here -->
+            </div>
+
+            <div id="aptitudeContent" class="tab-content" style="display: none;">
+              <!-- Aptitude questions will be injected here -->
             </div>
           </div>
         </div>
@@ -84,6 +94,8 @@
 
     <!-- Footer -->
     <footer>&copy; 2025 PrepMate. Built by students, for students.</footer>
+
+    <!-- JS -->
     <script src="js/companies.js"></script>
   </body>
 </html>

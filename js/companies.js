@@ -1,8 +1,8 @@
 const companyList = document.getElementById("companyList");
 const dsaContent = document.getElementById("dsaContent");
 const aptitudeContent = document.getElementById("aptitudeContent");
-const companyTitle = document.getElementById("companyTitle");
-
+const tabSection = document.getElementById("tabSection");
+const placeholderMessage = document.getElementById("placeholderMessage");
 companyQues = [
   {
     id: 1,
@@ -687,55 +687,116 @@ companyQues = [
     },
   },
 ];
+const companyContent = document.getElementById("companyContent");
+companyContent.style.backgroundImage = "url('./image/img3.png')";
 
-// ✅ Clear any previous entries
-companyList.innerHTML = "";
-
-// ✅ Create unique sidebar links with event listeners
+// Add event listener to each company link dynamically
 companyQues.forEach((companyObj) => {
   const li = document.createElement("li");
   const a = document.createElement("a");
   a.href = "#";
   a.textContent = companyObj.companyName;
-  a.addEventListener("click", () => showCompanyData(companyObj.companyName));
+  a.addEventListener("click", () => showCompanyData(companyObj));
   li.appendChild(a);
   companyList.appendChild(li);
 });
 
-//Function to show DSA & Aptitude
-function showCompanyData(companyName) {
-  const companyData = companyQues.find((c) => c.companyName === companyName);
-  if (!companyData) return;
+function showCompanyData(companyObj) {
+  companyContent.style.backgroundImage = "url('./image/img4.jpg')";
+  // Hide placeholder and show tabs
+  placeholderMessage.style.display = "none";
+  tabSection.style.display = "block";
 
-  companyTitle.textContent = companyName;
+  // Clear previous data
   dsaContent.innerHTML = "";
   aptitudeContent.innerHTML = "";
 
-  //DSA
-  for (const topic in companyData.dsa) {
-    const topicBlock = document.createElement("div");
-    topicBlock.innerHTML = `<h4>${topic}</h4>`;
-    companyData.dsa[topic].forEach((q) => {
-      topicBlock.innerHTML += `
-        <div class="question-card">
-          <a href="${q.link}" target="_blank">${q.title}</a>
-          <span>Difficulty: ${q.difficulty}</span>
-        </div>`;
+  // Flatten DSA questions and display
+  for (const topic in companyObj.dsa) {
+    companyObj.dsa[topic].forEach((q) => {
+      dsaContent.innerHTML += createQuestionCard(q);
     });
-    dsaContent.appendChild(topicBlock);
   }
 
-  //Aptitude
-  for (const topic in companyData.aptitude) {
-    const topicBlock = document.createElement("div");
-    topicBlock.innerHTML = `<h4>${topic}</h4>`;
-    companyData.aptitude[topic].forEach((q) => {
-      topicBlock.innerHTML += `
-        <div class="question-card">
-          <a href="${q.link}" target="_blank">${q.title}</a>
-          <span>Difficulty: ${q.difficulty}</span>
-        </div>`;
+  // Flatten Aptitude questions and display
+  for (const topic in companyObj.aptitude) {
+    companyObj.aptitude[topic].forEach((q) => {
+      aptitudeContent.innerHTML += createQuestionCard(q);
     });
-    aptitudeContent.appendChild(topicBlock);
+  }
+
+  // Default to DSA tab
+  switchTab("dsaTab");
+}
+
+
+// Toggle tab functionality
+document.getElementById("dsaTab").addEventListener("click", () => switchTab("dsaTab"));
+document.getElementById("aptitudeTab").addEventListener("click", () => switchTab("aptitudeTab"));
+
+function switchTab(tabId) {
+  const dsaTab = document.getElementById("dsaTab");
+  const aptitudeTab = document.getElementById("aptitudeTab");
+
+  if (tabId === "dsaTab") {
+    dsaContent.style.display = "block";
+    aptitudeContent.style.display = "none";
+    dsaTab.classList.add("active");
+    aptitudeTab.classList.remove("active");
+  } else {
+    dsaContent.style.display = "none";
+    aptitudeContent.style.display = "block";
+    aptitudeTab.classList.add("active");
+    dsaTab.classList.remove("active");
+  }
+}
+
+function createQuestionCard(question, index = "") {
+  const isComplete = localStorage.getItem(question.title) === "true";
+  const checkIcon = isComplete
+    ? `<i class="fas fa-check check-icon"></i>`
+    : `<i class="far fa-circle check-icon" style="color: gray;"></i>`;
+
+  return `
+    <div class="question-item" onclick="toggleComplete(this.querySelector('i'), '${question.title}')">
+      <div class="question-left">
+        ${checkIcon}
+        <a href="${question.link}" target="_blank" class="question-title">${index ? index + '. ' : ''}${question.title}</a>
+      </div>
+      <div class="question-right">
+        <span class="accuracy">${question.accuracy || ''}</span>
+        <span class="difficulty ${getDifficultyClass(question.difficulty)}">${question.difficulty}</span>
+      </div>
+    </div>
+  `;
+}
+
+function getDifficultyClass(difficulty) {
+  switch (difficulty.toLowerCase()) {
+    case 'easy':
+      return 'easy';
+    case 'medium':
+    case 'med.':
+      return 'med';
+    case 'hard':
+      return 'hard';
+    default:
+      return '';
+  }
+}
+
+
+function toggleComplete(iconElem, title) {
+  const isComplete = localStorage.getItem(title) === "true";
+  if (isComplete) {
+    localStorage.setItem(title, "false");
+    iconElem.classList.remove("fa-check-circle");
+    iconElem.classList.add("fa-circle");
+    iconElem.style.color = "gray";
+  } else {
+    localStorage.setItem(title, "true");
+    iconElem.classList.remove("fa-circle");
+    iconElem.classList.add("fa-check-circle");
+    iconElem.style.color = "green";
   }
 }
