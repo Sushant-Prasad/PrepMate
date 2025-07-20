@@ -1,28 +1,35 @@
-const sliderImages = document.querySelectorAll('.hero-slider .hero-img');
-      const prevBtn = document.querySelector('.hero-slider .prev');
-      const nextBtn = document.querySelector('.hero-slider .next');
-      let currentIndex = 0;
+const slides = document.querySelectorAll('.hero-slider-large .slide');
+const prevBtn = document.querySelector('.hero-slider-large .prev');
+const nextBtn = document.querySelector('.hero-slider-large .next');
+let currentSlide = 0;
 
-      function showSlide(index) {
-        sliderImages.forEach((img, i) => {
-          img.classList.toggle('active', i === index);
-        });
-      }
+function showSlide(idx) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === idx);
+    if (i === idx) {
+      // Restart animation
+      const content = slide.querySelector('.slide-content');
+      content.style.animation = 'none';
+      void content.offsetWidth; // trigger reflow
+      content.style.animation = '';
+    }
+  });
+}
 
-      function nextSlide() {
-        currentIndex = (currentIndex + 1) % sliderImages.length;
-        showSlide(currentIndex);
-      }
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
 
-      function prevSlide() {
-        currentIndex = (currentIndex - 1 + sliderImages.length) % sliderImages.length;
-        showSlide(currentIndex);
-      }
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
 
-      nextBtn.addEventListener('click', nextSlide);
-      prevBtn.addEventListener('click', prevSlide);
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
 
-      // Auto-slide every 4 seconds
-      setInterval(nextSlide, 4000);
+// Auto-slide every 5 seconds
+setInterval(nextSlide, 5000);
 
-      showSlide(currentIndex);
+showSlide(currentSlide);

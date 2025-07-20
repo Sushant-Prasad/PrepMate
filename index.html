@@ -11,24 +11,41 @@
   <body>
       <my-nav> </my-nav>
     <section class="hero">
-      <div class="hero-img-wrapper">
-        <div class="hero-slider">
-          <img src="image/study.jpg" alt="studying together" class="hero-img active" />
-          <img src="image/group dis.png" alt="group discussion" class="hero-img" />
-          <img src="image/coding.jpg" alt="coding session" class="hero-img" />
-          <img src="image/examprep.jpg" alt="exam prep" class="hero-img" />
-          <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
-          <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+      <div class="hero-slider-large">
+        <div class="slide active">
+          <img src="image/collab.jpg" alt="Studying together" />
+          <div class="slide-content">
+            <h2 class="slide-title">Collaborate & Learn</h2>
+            <p class="slide-desc">Join study rooms and prepare with peers for placements.</p>
+          </div>
         </div>
+        <div class="slide">
+          <img src="image/group disc.jpg" alt="Group discussion" />
+          <div class="slide-content">
+            <h2 class="slide-title">Group Discussions</h2>
+            <p class="slide-desc">Share ideas and solve problems together in real time.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="image/coding.jpg" alt="Coding session" />
+          <div class="slide-content">
+            <h2 class="slide-title">DSA & Coding</h2>
+            <p class="slide-desc">Practice coding questions for top company interviews.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="image/examprep.jpg" alt="Exam prep" />
+          <div class="slide-content">
+            <h2 class="slide-title">Aptitude & Exams</h2>
+            <p class="slide-desc">Sharpen your aptitude skills with quizzes and challenges.</p>
+          </div>
+        </div>
+        <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
       </div>
-      <h2>Prepare Smarter. Together.</h2>
-      <p>
-        Collaborate with peers, share resources, and ace your placement journey
-        with PrepMate.
-      </p>
-      <div class="cta-buttons">
-        <a href="registration.html">Get Started</a>
-        <a href="dashboard.html">Explore Dashboard</a>
+      <div class="hero-cta-buttons">
+        <a href="registration.html" class="slide-btn">Get Started</a>
+        <a href="dashboard.html" class="slide-btn outline">Explore Dashboard</a>
       </div>
     </section>
 
@@ -75,21 +92,31 @@
 
     <!-- Website Stats Section -->
     <section class="stats-section">
-      <h3 class="stats-title">PrepMate Stats</h3>
+      <h3 class="stats-title">Making an Impact Together</h3>
+      <p class="stats-subtitle">Your collaboration has transformed thousands of careers.</p>
       <div class="stats-grid">
         <div class="stat-box">
+          <i class="fas fa-users stat-icon"></i>
           <div class="stat-number">12,500+</div>
           <div class="stat-label">Subscribers</div>
         </div>
         <div class="stat-box">
+          <i class="fas fa-user-check stat-icon"></i>
           <div class="stat-number">2,300+</div>
           <div class="stat-label">Daily Active Users</div>
         </div>
         <div class="stat-box">
-          <div class="stat-number"><i class="fas fa-trophy" style="color:#FFD700;"></i> 5</div>
+          <i class="fas fa-building stat-icon"></i>
+          <div class="stat-number">120+</div>
+          <div class="stat-label">Study Rooms</div>
+        </div>
+        <div class="stat-box">
+          <i class="fas fa-trophy stat-icon"></i>
+          <div class="stat-number">5</div>
           <div class="stat-label">Awards Won</div>
         </div>
       </div>
+      <a href="registration.html" class="stats-cta-btn">Join PrepMate</a>
     </section>
 
     <my-foot></my-foot>
