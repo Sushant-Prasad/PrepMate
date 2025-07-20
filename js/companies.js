@@ -1,693 +1,12 @@
+
+
 const companyList = document.getElementById("companyList");
 const dsaContent = document.getElementById("dsaContent");
 const aptitudeContent = document.getElementById("aptitudeContent");
 const tabSection = document.getElementById("tabSection");
 const placeholderMessage = document.getElementById("placeholderMessage");
-companyQues = [
-  {
-    id: 1,
-    companyName: "Amazon",
-    dsa: {
-      Arrays: [
-        {
-          title: "Two Sum",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/dsa/two-sum",
-        },
-        {
-          title: "Maximum Subarray",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/max-subarray",
-        },
-      ],
-      "Dynamic Programming": [
-        {
-          title: "0/1 Knapsack",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/knapsack",
-        },
-        {
-          title: "Longest Palindromic Substring",
-          difficulty: "Hard",
-          link: "https://example.com/amazon/dsa/longest-palindrome",
-        },
-      ],
-    },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
-  },
-  {
-    id: 2,
-    companyName: "Google",
-    dsa: {
-      Arrays: [
-        {
-          title: "Two Sum",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/dsa/two-sum",
-        },
-        {
-          title: "Maximum Subarray",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/max-subarray",
-        },
-      ],
-      "Dynamic Programming": [
-        {
-          title: "0/1 Knapsack",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/knapsack",
-        },
-        {
-          title: "Longest Palindromic Substring",
-          difficulty: "Hard",
-          link: "https://example.com/amazon/dsa/longest-palindrome",
-        },
-      ],
-    },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
-  },
-  {
-    id: 3,
-    companyName: "Microsoft",
-    dsa: {
-      Arrays: [
-        {
-          title: "Two Sum",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/dsa/two-sum",
-        },
-        {
-          title: "Maximum Subarray",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/max-subarray",
-        },
-      ],
-      "Dynamic Programming": [
-        {
-          title: "0/1 Knapsack",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/knapsack",
-        },
-        {
-          title: "Longest Palindromic Substring",
-          difficulty: "Hard",
-          link: "https://example.com/amazon/dsa/longest-palindrome",
-        },
-      ],
-    },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
-  },
-  {
-    id: 4,
-    companyName: "TCS",
-    dsa: {
-      Arrays: [
-        {
-          title: "Two Sum",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/dsa/two-sum",
-        },
-        {
-          title: "Maximum Subarray",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/max-subarray",
-        },
-      ],
-      "Dynamic Programming": [
-        {
-          title: "0/1 Knapsack",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/knapsack",
-        },
-        {
-          title: "Longest Palindromic Substring",
-          difficulty: "Hard",
-          link: "https://example.com/amazon/dsa/longest-palindrome",
-        },
-      ],
-    },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
-  },
-  {
-    id: 5,
-    companyName: "Infosys",
-    dsa: {
-      Arrays: [
-        {
-          title: "Two Sum",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/dsa/two-sum",
-        },
-        {
-          title: "Maximum Subarray",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/max-subarray",
-        },
-      ],
-      "Dynamic Programming": [
-        {
-          title: "0/1 Knapsack",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/knapsack",
-        },
-        {
-          title: "Longest Palindromic Substring",
-          difficulty: "Hard",
-          link: "https://example.com/amazon/dsa/longest-palindrome",
-        },
-      ],
-    },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
-  },
-  {
-    id: 6,
-    companyName: "Wipro",
-    dsa: {
-      Arrays: [
-        {
-          title: "Two Sum",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/dsa/two-sum",
-        },
-        {
-          title: "Maximum Subarray",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/max-subarray",
-        },
-      ],
-      "Dynamic Programming": [
-        {
-          title: "0/1 Knapsack",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/knapsack",
-        },
-        {
-          title: "Longest Palindromic Substring",
-          difficulty: "Hard",
-          link: "https://example.com/amazon/dsa/longest-palindrome",
-        },
-      ],
-    },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
-  },
-  {
-    id: 7,
-    companyName: "Capgemini",
-    dsa: {
-      Arrays: [
-        {
-          title: "Two Sum",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/dsa/two-sum",
-        },
-        {
-          title: "Maximum Subarray",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/max-subarray",
-        },
-      ],
-      "Dynamic Programming": [
-        {
-          title: "0/1 Knapsack",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/knapsack",
-        },
-        {
-          title: "Longest Palindromic Substring",
-          difficulty: "Hard",
-          link: "https://example.com/amazon/dsa/longest-palindrome",
-        },
-      ],
-    },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
-  },
-  {
-    id: 8,
-    companyName: "Accenture",
-    dsa: {
-      Arrays: [
-        {
-          title: "Two Sum",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/dsa/two-sum",
-        },
-        {
-          title: "Maximum Subarray",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/max-subarray",
-        },
-      ],
-      "Dynamic Programming": [
-        {
-          title: "0/1 Knapsack",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/knapsack",
-        },
-        {
-          title: "Longest Palindromic Substring",
-          difficulty: "Hard",
-          link: "https://example.com/amazon/dsa/longest-palindrome",
-        },
-      ],
-    },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
-  },
-  {
-    id: 9,
-    companyName: "Flipkart",
-    dsa: {
-      Arrays: [
-        {
-          title: "Two Sum",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/dsa/two-sum",
-        },
-        {
-          title: "Maximum Subarray",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/max-subarray",
-        },
-      ],
-      "Dynamic Programming": [
-        {
-          title: "0/1 Knapsack",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/knapsack",
-        },
-        {
-          title: "Longest Palindromic Substring",
-          difficulty: "Hard",
-          link: "https://example.com/amazon/dsa/longest-palindrome",
-        },
-      ],
-    },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
-  },
-  {
-    id: 10,
-    companyName: "Uber",
-    dsa: {
-      Arrays: [
-        {
-          title: "Two Sum",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/dsa/two-sum",
-        },
-        {
-          title: "Maximum Subarray",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/max-subarray",
-        },
-      ],
-      "Dynamic Programming": [
-        {
-          title: "0/1 Knapsack",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/knapsack",
-        },
-        {
-          title: "Longest Palindromic Substring",
-          difficulty: "Hard",
-          link: "https://example.com/amazon/dsa/longest-palindrome",
-        },
-      ],
-    },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
-  },
-  {
-    id: 11,
-    companyName: "Paytn",
-    dsa: {
-      Arrays: [
-        {
-          title: "Two Sum",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/dsa/two-sum",
-        },
-        {
-          title: "Maximum Subarray",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/max-subarray",
-        },
-      ],
-      "Dynamic Programming": [
-        {
-          title: "0/1 Knapsack",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/dsa/knapsack",
-        },
-        {
-          title: "Longest Palindromic Substring",
-          difficulty: "Hard",
-          link: "https://example.com/amazon/dsa/longest-palindrome",
-        },
-      ],
-    },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Profit and Loss",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/profit-loss",
-        },
-        {
-          title: "Simple Interest",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/simple-interest",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Blood Relations",
-          difficulty: "Medium",
-          link: "https://example.com/amazon/aptitude/blood-relations",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Synonyms",
-          difficulty: "Easy",
-          link: "https://example.com/amazon/aptitude/synonyms",
-        },
-      ],
-    },
-  },
-
-  {
-    id: 12,
-    companyName: "Oracle",
-    dsa: {
-      "Linked List": [
-        {
-          title: "Detect Loop in Linked List",
-          difficulty: "Easy",
-          link: "https://example.com/tcs/dsa/loop-detect",
-        },
-      ],
-      Sorting: [
-        {
-          title: "Merge Sort",
-          difficulty: "Medium",
-          link: "https://example.com/tcs/dsa/merge-sort",
-        },
-      ],
-    },
-    aptitude: {
-      "Numerical Ability": [
-        {
-          title: "Time and Work",
-          difficulty: "Medium",
-          link: "https://example.com/tcs/aptitude/time-work",
-        },
-      ],
-      Reasoning: [
-        {
-          title: "Number Series",
-          difficulty: "Medium",
-          link: "https://example.com/tcs/aptitude/number-series",
-        },
-      ],
-      "Verbal Ability": [
-        {
-          title: "Reading Comprehension",
-          difficulty: "Medium",
-          link: "https://example.com/tcs/aptitude/reading-comprehension",
-        },
-      ],
-    },
-  },
-];
 const companyContent = document.getElementById("companyContent");
+
 companyContent.style.backgroundImage = "url('./image/img3.png')";
 
 // Add event listener to each company link dynamically
@@ -696,43 +15,161 @@ companyQues.forEach((companyObj) => {
   const a = document.createElement("a");
   a.href = "#";
   a.textContent = companyObj.companyName;
-  a.addEventListener("click", () => showCompanyData(companyObj));
+
+  a.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    // Highlight active company
+    document.querySelectorAll("#companyList a").forEach((link) => {
+      link.classList.remove("active-company");
+    });
+    a.classList.add("active-company");
+
+    showCompanyData(companyObj);
+  });
+
   li.appendChild(a);
   companyList.appendChild(li);
 });
 
 function showCompanyData(companyObj) {
-  companyContent.style.backgroundImage = "url('./image/img4.jpg')";
-  // Hide placeholder and show tabs
+  companyContent.style.backgroundImage = "url('./image/img5.webp')";
   placeholderMessage.style.display = "none";
   tabSection.style.display = "block";
 
-  // Clear previous data
   dsaContent.innerHTML = "";
   aptitudeContent.innerHTML = "";
 
-  // Flatten DSA questions and display
+  // Render DSA
   for (const topic in companyObj.dsa) {
     companyObj.dsa[topic].forEach((q) => {
       dsaContent.innerHTML += createQuestionCard(q);
     });
   }
 
-  // Flatten Aptitude questions and display
-  for (const topic in companyObj.aptitude) {
-    companyObj.aptitude[topic].forEach((q) => {
-      aptitudeContent.innerHTML += createQuestionCard(q);
+  // Render Aptitude dropdown sections
+  companyObj.aptitude.forEach((section) => {
+    const wrapper = document.createElement("div");
+    wrapper.className = "aptitude-item";
+
+    const header = document.createElement("div");
+    header.className = "aptitude-header";
+   header.addEventListener("click", () => {
+  header.classList.toggle("open");
+  const body = header.nextElementSibling;
+  const isOpen = body.style.display === "block";
+  body.style.display = isOpen ? "none" : "block";
+
+  if (!isOpen) {
+    // Section is being opened — reset previous state
+    const allQuestions = body.querySelectorAll(".aptitude-question");
+
+    allQuestions.forEach((qDiv) => {
+      // Remove all option styles
+      qDiv.querySelectorAll("li[data-option]").forEach((option) => {
+        option.classList.remove("correct", "wrong");
+      });
+
+      // Hide solution
+      const solution = qDiv.querySelector(".solution");
+      if (solution) solution.style.display = "none";
+
+      // Remove "solution-shown" marker if any
+      qDiv.classList.remove("solution-shown");
     });
   }
+});
 
-  // Default to DSA tab
+
+    const categoryClassMap = {
+      "Numerical Ability": "numerical",
+      Reasoning: "reasoning",
+      "Verbal Ability": "verbal",
+    };
+
+    const badgeClass = categoryClassMap[section.category] || "default";
+
+    header.innerHTML = `
+      <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+      <span class="aptitude-title">${section.title}</span>
+      <span class="category-badge ${badgeClass}">${section.category}</span>
+    `;
+
+    const body = document.createElement("div");
+    body.className = "aptitude-body";
+    body.style.display = "none";
+
+    section.questions.forEach((question, index) => {
+      const qDiv = document.createElement("div");
+      qDiv.className = "aptitude-question";
+
+      const optionsHtml = Object.entries(question.options)
+        .map(([key, value]) => {
+          return `<li data-option="${key}">${key}. ${value}</li>`;
+        })
+        .join("");
+
+      qDiv.innerHTML = `
+    <p><strong>Q${index + 1}:</strong> ${question.statement}</p>
+    <ul class="option-list">
+      ${optionsHtml}
+    </ul>
+    <button class="check-btn">Check Solution</button>
+    <div class="solution" style="display: none;">
+      <p><strong>Correct Answer:</strong> ${question.answer}</p>
+      <p><strong>Explanation:</strong> ${
+        question.explanation || "No explanation available."
+      }</p>
+    </div>
+  `;
+
+      // Handle option selection with multiple attempts before solution
+const options = qDiv.querySelectorAll("li[data-option]");
+options.forEach((optionEl) => {
+  optionEl.addEventListener("click", () => {
+    // Don't allow option change after showing solution
+    if (qDiv.classList.contains("solution-shown")) return;
+
+    // Clear all previous selections
+    options.forEach((el) => {
+      el.classList.remove("correct", "wrong");
+    });
+
+    const selected = optionEl.getAttribute("data-option");
+    const correct = question.answer;
+
+    optionEl.classList.add(selected === correct ? "correct" : "wrong");
+  });
+});
+
+
+
+      // Toggle solution
+      const checkBtn = qDiv.querySelector(".check-btn");
+      const solutionDiv = qDiv.querySelector(".solution");
+      checkBtn.addEventListener("click", () => {
+        solutionDiv.style.display =
+          solutionDiv.style.display === "block" ? "none" : "block";
+      });
+
+      body.appendChild(qDiv);
+    });
+
+    wrapper.appendChild(header);
+    wrapper.appendChild(body);
+    aptitudeContent.appendChild(wrapper);
+  });
+
   switchTab("dsaTab");
 }
 
-
-// Toggle tab functionality
-document.getElementById("dsaTab").addEventListener("click", () => switchTab("dsaTab"));
-document.getElementById("aptitudeTab").addEventListener("click", () => switchTab("aptitudeTab"));
+// Tab switching
+document
+  .getElementById("dsaTab")
+  .addEventListener("click", () => switchTab("dsaTab"));
+document
+  .getElementById("aptitudeTab")
+  .addEventListener("click", () => switchTab("aptitudeTab"));
 
 function switchTab(tabId) {
   const dsaTab = document.getElementById("dsaTab");
@@ -758,14 +195,20 @@ function createQuestionCard(question, index = "") {
     : `<i class="far fa-circle check-icon" style="color: gray;"></i>`;
 
   return `
-    <div class="question-item" onclick="toggleComplete(this.querySelector('i'), '${question.title}')">
+    <div class="question-item" onclick="toggleComplete(this.querySelector('i'), '${
+      question.title
+    }')">
       <div class="question-left">
         ${checkIcon}
-        <a href="${question.link}" target="_blank" class="question-title">${index ? index + '. ' : ''}${question.title}</a>
+        <a href="${question.link}" target="_blank" class="question-title">${
+    index ? index + ". " : ""
+  }${question.title}</a>
       </div>
       <div class="question-right">
-        <span class="accuracy">${question.accuracy || ''}</span>
-        <span class="difficulty ${getDifficultyClass(question.difficulty)}">${question.difficulty}</span>
+        <span class="accuracy">${question.accuracy || ""}</span>
+        <span class="difficulty ${getDifficultyClass(question.difficulty)}">${
+    question.difficulty
+  }</span>
       </div>
     </div>
   `;
@@ -773,18 +216,17 @@ function createQuestionCard(question, index = "") {
 
 function getDifficultyClass(difficulty) {
   switch (difficulty.toLowerCase()) {
-    case 'easy':
-      return 'easy';
-    case 'medium':
-    case 'med.':
-      return 'med';
-    case 'hard':
-      return 'hard';
+    case "easy":
+      return "easy";
+    case "medium":
+    case "med.":
+      return "med";
+    case "hard":
+      return "hard";
     default:
-      return '';
+      return "";
   }
 }
-
 
 function toggleComplete(iconElem, title) {
   const isComplete = localStorage.getItem(title) === "true";

@@ -1,4 +1,4 @@
-companyQues = [
+ companyQues = [
   {
     id: 1,
     companyName: "Amazon",
@@ -28,24 +28,25 @@ companyQues = [
         },
       ],
     },
-    aptitude:  [
+    aptitude: [
       {
         category: "Numerical Ability",
         title: "Profit and Loss",
         link: "https://example.com/amazon/aptitude/profit-loss",
         questions: [
           {
-            id: "1",
-            statement:
-              "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
-            options: {
-              A: "4.5%",
-              B: "5%",
-              C: "10%",
-              D: "12%",
-            },
-            answer: "C",
-          },
+        id: "1",                        
+        statement:
+          "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is:",
+        options: {
+          A: "4.5%",
+          B: "5%",
+          C: "10%",
+          D: "12%",
+        },
+        answer: "C",                     
+        explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%", 
+      },
           {
             id: "2",
             statement:
@@ -57,6 +58,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "3",
@@ -69,6 +71,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "4",
@@ -81,6 +84,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
         ],
       },
@@ -100,6 +104,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "2",
@@ -112,6 +117,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "3",
@@ -124,6 +130,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "4",
@@ -136,6 +143,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
         ],
       },
@@ -155,6 +163,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "2",
@@ -167,6 +176,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "3",
@@ -179,6 +189,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "4",
@@ -191,6 +202,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
         ],
       },
@@ -210,6 +222,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "2",
@@ -222,6 +235,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "3",
@@ -234,6 +248,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "4",
@@ -246,6 +261,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
         ],
       },
@@ -280,7 +296,7 @@ companyQues = [
         },
       ],
     },
-    aptitude:  [
+    aptitude: [
       {
         category: "Numerical Ability",
         title: "Profit and Loss",
@@ -297,6 +313,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "2",
@@ -309,6 +326,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "3",
@@ -321,6 +339,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "4",
@@ -333,6 +352,7 @@ companyQues = [
               D: "12%",
             },
             answer: "C",
+            explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
         ],
       },
@@ -351,7 +371,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "2",
@@ -363,7 +383,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "3",
@@ -375,7 +395,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "4",
@@ -387,7 +407,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
         ],
       },
@@ -406,7 +426,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "2",
@@ -418,7 +438,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "3",
@@ -430,7 +450,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "4",
@@ -442,7 +462,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
         ],
       },
@@ -461,7 +481,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "2",
@@ -473,7 +493,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "3",
@@ -485,7 +505,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "4",
@@ -497,7 +517,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
         ],
       },
@@ -532,7 +552,7 @@ companyQues = [
         },
       ],
     },
-    aptitude:  [
+    aptitude: [
       {
         category: "Numerical Ability",
         title: "Profit and Loss",
@@ -548,7 +568,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "2",
@@ -560,7 +580,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "3",
@@ -572,7 +592,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "4",
@@ -584,7 +604,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
         ],
       },
@@ -603,7 +623,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "2",
@@ -615,7 +635,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "3",
@@ -627,7 +647,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "4",
@@ -639,7 +659,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
         ],
       },
@@ -658,7 +678,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "2",
@@ -670,7 +690,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "3",
@@ -682,7 +702,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "4",
@@ -694,7 +714,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
         ],
       },
@@ -713,7 +733,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "2",
@@ -725,7 +745,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "3",
@@ -737,7 +757,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
           {
             id: "4",
@@ -749,7 +769,7 @@ companyQues = [
               C: "10%",
               D: "12%",
             },
-            answer: "C",
+            answer: "C",explanation: "Total cost = 4700 + 800 = 5500. Selling price = 5800. Gain = 300. Gain% = (300/5500)*100 = ~5.45% ≈ 5%",
           },
         ],
       },
@@ -784,7 +804,7 @@ companyQues = [
         },
       ],
     },
-    aptitude:  [
+    aptitude: [
       {
         category: "Numerical Ability",
         title: "Profit and Loss",
@@ -1036,7 +1056,7 @@ companyQues = [
         },
       ],
     },
-    aptitude:  [
+    aptitude: [
       {
         category: "Numerical Ability",
         title: "Profit and Loss",
@@ -1288,7 +1308,7 @@ companyQues = [
         },
       ],
     },
-    aptitude:  [
+    aptitude: [
       {
         category: "Numerical Ability",
         title: "Profit and Loss",
@@ -1540,7 +1560,7 @@ companyQues = [
         },
       ],
     },
-    aptitude:  [
+    aptitude: [
       {
         category: "Numerical Ability",
         title: "Profit and Loss",
@@ -1792,7 +1812,7 @@ companyQues = [
         },
       ],
     },
-    aptitude:  [
+    aptitude: [
       {
         category: "Numerical Ability",
         title: "Profit and Loss",
@@ -2044,7 +2064,7 @@ companyQues = [
         },
       ],
     },
-    aptitude:  [
+    aptitude: [
       {
         category: "Numerical Ability",
         title: "Profit and Loss",
@@ -2296,7 +2316,7 @@ companyQues = [
         },
       ],
     },
-    aptitude:  [
+    aptitude: [
       {
         category: "Numerical Ability",
         title: "Profit and Loss",
@@ -2548,7 +2568,7 @@ companyQues = [
         },
       ],
     },
-    aptitude:  [
+    aptitude: [
       {
         category: "Numerical Ability",
         title: "Profit and Loss",
@@ -2791,7 +2811,7 @@ companyQues = [
         },
       ],
     },
-    aptitude:  [
+    aptitude: [
       {
         category: "Numerical Ability",
         title: "Profit and Loss",
