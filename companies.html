@@ -4,15 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PrepMate – Company-wise Prep</title>
-
-    <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/companies.css" />
@@ -24,24 +21,20 @@
         <div class="logo">
           <a href="index.html">PrepMate</a>
         </div>
-
         <ul class="nav-links">
           <li><a href="study-rooms.html">Study Rooms</a></li>
           <li><a href="dsa.html">DSA</a></li>
           <li><a href="aptitude.html">Aptitude</a></li>
           <li><a href="companies.html">Company Prep</a></li>
         </ul>
-
         <div class="right-nav">
           <div class="search-bar">
             <input type="text" placeholder="Search topics or questions..." />
           </div>
-
           <div class="streaks">
             <a href="dsa-streak.html" title="DSA Streak 🔥">🔥</a>
             <a href="aptitude-streak.html" title="Aptitude Streak 📈">📈</a>
           </div>
-
           <div class="profile">
             <a href="login.html">Login</a>
           </div>
@@ -49,45 +42,60 @@
       </nav>
     </header>
 
+    <!-- Main Layout -->
     <section class="companies-layout">
-     <!-- Sidebar -->
-<aside class="sidebar">
-  <h3>Companies</h3>
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h3>Companies</h3>
+        <div class="sidebar-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            placeholder="Search companies..."
+            id="companySearch"
+          />
+        </div>
+        <ul class="company-list" id="companyList">
+          <!-- Companies injected via JS -->
+        </ul>
+      </aside>
 
-  <!-- Search bar inside sidebar -->
-  <div class="sidebar-search">
-    <input type="text" placeholder="Search companies..." id="companySearch" />
-  </div>
+      <!-- Main Content -->
+      <div class="content-banner">
+        <div class="company-content" id="companyContent">
+          <!-- Placeholder before selection -->
+          <div id="placeholderMessage">
+            <h2>Your Placement Preparation Starts Here.</h2>
+            <p>
+              Master company-specific DSA problems & Aptitude questions here.
+            </p>
+          </div>
 
-  <!-- Company list -->
-  <ul class="company-list" id="companyList">
-    <li><a href="#">Amazon</a></li>
-    <li><a href="#">Google</a></li>
-    <li><a href="#">Microsoft</a></li>
-    <li><a href="#">TCS</a></li>
-    <li><a href="#">Infosys</a></li>
-    <li><a href="#">Wipro</a></li>
-    <li><a href="#">Capgemini</a></li>
-    <li><a href="#">Accenture</a></li>
-    <!-- Add more -->
-  </ul>
-</aside>
+          <!-- Tabs and content (initially hidden) -->
+          <div class="tab-section" id="tabSection" style="display: none;">
+            <!-- Tabs -->
+            <div class="tabs">
+              <button id="dsaTab" class="active">DSA</button>
+              <button id="aptitudeTab">Aptitude</button>
+            </div>
 
+            <!-- Tab Content -->
+            <div id="dsaContent" class="tab-content">
+              <!-- DSA questions will be injected here -->
+            </div>
 
-      <!-- Right content -->
-<div class="content-banner">
-  <div class="banner-image">
-    <img
-      src="image/img1.png"
-      alt="Company Prep Banner"
-      class="banner-img"
-    />
-  </div>
-</div>
-
+            <div id="aptitudeContent" class="tab-content" style="display: none;">
+              <!-- Aptitude questions will be injected here -->
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>&copy; 2025 PrepMate. Built by students, for students.</footer>
+
+    <!-- JS -->
+    <script src="js/companies.js"></script>
   </body>
 </html>
