@@ -7,7 +7,7 @@
         {
           title: "Two Sum",
           difficulty: "Easy",
-          link: "https://example.com/amazon/dsa/two-sum",
+          link: "https://leetcode.com/problems/two-sum/description/",
         },
         {
           title: "Maximum Subarray",
