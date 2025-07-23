@@ -45,7 +45,31 @@ customElements.define('my-nav', MyNav);
 class MyFoot extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-            <footer>&copy; 2025 PrepMate. Built by students, for students.</footer>
+      <footer>
+  <!-- <div class="footer"> -->
+  <div class="footer-container">
+    <div class="footer-section">
+      <h2>We are also available </h2>
+      <ul class="social-media">
+          <li><i id="facebook" class="fa-brands fa-facebook"></i><a href="#">Facebook</a></li>
+          <li><i id="x" class="fa-brands fa-x-twitter"></i><a href="#">Twitter</a></li>
+          <li><i id="youtube" class="fa-brands fa-youtube"></i><a href="#">Youtube</a></li>
+          <li><i id="instagram" class="fa-brands fa-instagram"></i><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <ul class="foot-info">
+        <li><a href="contactFaq.html">Contact Us</a></li>
+        <p>|</p>
+        <li><a href="contactFaq.html">FAQ</a></li>
+        <p>|</p>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- </div> -->
+</footer>
+<p class="copyright">&copy; 2025 PrepMate. Built by students, for students.</p>
     `;
 
     if (!this.isConnected) {
@@ -53,7 +77,7 @@ class MyFoot extends HTMLElement {
     }
 
     // Select the <footer> inside this element
-    const footer = this.querySelector('footer');
+    const footer = this.querySelector('footer .copyright');
 
     function adjustFooter() {
       const docHeight = document.documentElement.scrollHeight;
