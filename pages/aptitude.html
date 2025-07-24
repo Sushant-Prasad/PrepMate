@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arithmetic Aptitude - PREPMATE</title>
+  <link rel="stylesheet" href="../css/aptitude.css" />
+<link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">PrepMate</a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="study-rooms.html">Study Rooms</a></li>
+        <li><a href="dsa.html">DSA</a></li>
+        <li><a href="aptitude.html">Aptitude</a></li>
+        <li><a href="companies.html">Company Prep</a></li>
+      </ul>
+
+      <div class="right-nav">
+        <div class="search-bar">
+          <input type="text" placeholder="Search topics or questions..." />
+        </div>
+
+        <div class="streaks">
+          <a href="dsa-streak.html"><span title="DSA Streak 🔥">🔥</span></a>
+          <a href="aptitude-streak.html"><span title="Aptitude Streak 📈">📈</span></a>
+        </div>
+
+        <div class="profile">
+          <a href="login.html">Login</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="layout-container">
+    <aside class="sidebar">
+      <nav>
+        <a href="./aptitude.html" class="active">Aptitude</a>
+        <a href="./logical-reasoning.html" >Logical Reasoning</a>
+        <a href="./data-interpretation.html">Data Interpretation</a>
+        <a href="./verbal-ability.html">Verbal Ability</a>
+        <a href="./general-knowledge.html">General Knowledge</a>
+        <a href="./current-affair.html">current Affair</a>
+      </nav>
+    </aside>
+
+    <main class="main-section">
+      <!-- Filter / Search -->
+      <div class="search-filter">
+        <input type="text" id="searchInput" placeholder="Search for a subtopic..." />
+      </div>
+      
+      <!-- Subtopics List -->
+      <div class="card-container" id="subtopicList">
+        <!-- Each subtopic is a card linking to its page -->
+        <!-- Links are relative to /topics/aptitude/ -->
+        <a href="../topics/aptitude/problems-on-trains.html" class="card"><h3>Problems on Trains</h3></a>
+        <a href="../topics/aptitude/time-and-distance.html" class="card"><h3>Time and Distance</h3></a>
+        <a href="../topics/aptitude/time-and-work.html" class="card"><h3>Time and Work</h3></a>
+        <a href="../topics/aptitude/simple-interest.html" class="card"><h3>Simple Interest</h3></a>
+        <a href="../topics/aptitude/compound-interest.html" class="card"><h3>Compound Interest</h3></a>
+        <a href="../topics/aptitude/profit-and-loss.html" class="card"><h3>Profit and Loss</h3></a>
+        <a href="../topics/aptitude/partnership.html" class="card"><h3>Partnership</h3></a>
+        <a href="../topics/aptitude/percentage.html" class="card"><h3>Percentage</h3></a>
+        <a href="../topics/aptitude/problems-on-ages.html" class="card"><h3>Problems on Ages</h3></a>
+        <a href="../topics/aptitude/calendar.html" class="card"><h3>Calendar</h3></a>
+        <a href="../topics/aptitude/clock.html" class="card"><h3>Clock</h3></a>
+        <a href="../topics/aptitude/average.html" class="card"><h3>Average</h3></a>
+        <a href="../topics/aptitude/area.html" class="card"><h3>Area</h3></a>
+        <a href="../topics/aptitude/volume-and-surface-area.html" class="card"><h3>Volume and Surface Area</h3></a>
+        <a href="../topics/aptitude/permutation-combination.html" class="card"><h3>Permutation and Combination</h3></a>
+        <a href="../topics/aptitude/numbers.html" class="card"><h3>Numbers</h3></a>
+        <a href="../topics/aptitude/problems-on-numbers.html" class="card"><h3>Problems on Numbers</h3></a>
+        <a href="../topics/aptitude/problems-on-hcf-lcm.html" class="card"><h3>HCF and LCM</h3></a>
+        <a href="../topics/aptitude/decimal-fraction.html" class="card"><h3>Decimal Fraction</h3></a>
+        <a href="../topics/aptitude/simplification.html" class="card"><h3>Simplification</h3></a>
+        <a href="../topics/aptitude/surds-indices.html" class="card"><h3>Surds and Indices</h3></a>
+        <a href="../topics/aptitude/square-root-cube-root.html" class="card"><h3>Square and Cube Root</h3></a>
+        <a href="../topics/aptitude/ratio-and-proportion.html" class="card"><h3>Ratio and Proportion</h3></a>
+        <a href="../topics/aptitude/chain-rule.html" class="card"><h3>Chain Rule</h3></a>
+        <a href="../topics/aptitude/pipes-and-cistern.html" class="card"><h3>Pipes and Cisterns</h3></a>
+        <a href="../topics/aptitude/boats-and-streams.html" class="card"><h3>Boats and Streams</h3></a>
+        <a href="../topics/aptitude/alligation-or-mixture.html" class="card"><h3>Alligation and Mixture</h3></a>
+        <a href="../topics/aptitude/logarithm.html" class="card"><h3>Logarithm</h3></a>
+        <a href="../topics/aptitude/races-and-games.html" class="card"><h3>Races and Games</h3></a>
+        <a href="../topics/aptitude/stocks-and-shares.html" class="card"><h3>Stocks and Shares</h3></a>
+        <a href="../topics/aptitude/probability.html" class="card"><h3>Probability</h3></a>
+        <a href="../topics/aptitude/height-and-distance.html" class="card"><h3>Height and Distance</h3></a>
+        <a href="../topics/aptitude/bankers-discount.html" class="card"><h3>Banker’s Discount</h3></a>
+        <a href="../topics/aptitude/odd-man-out-series.html" class="card"><h3>Odd Man Out</h3></a>
+      </div>
+    </main>
+  </div>
+
+  <!-- JavaScript for Filter -->
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const subtopicList = document.getElementById("subtopicList").children;
+
+    searchInput.addEventListener("input", () => {
+      const searchTerm = searchInput.value.toLowerCase();
+      Array.from(subtopicList).forEach((item) => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(searchTerm) ? "block" : "none";
+      });
+    });
+  </script>
+
+</body>
+</html>

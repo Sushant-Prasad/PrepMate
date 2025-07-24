@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Agriculture</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/aptitude.css">
+</head>
+<body>
+   <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">PrepMate</a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="study-rooms.html">Study Rooms</a></li>
+        <li><a href="dsa.html">DSA</a></li>
+        <li><a href="aptitude.html">Aptitude</a></li>
+        <li><a href="companies.html">Company Prep</a></li>
+      </ul>
+
+      <div class="right-nav">
+        <div class="search-bar">
+          <input type="text" placeholder="Search topics or questions..." />
+        </div>
+
+        <div class="streaks">
+          <a href="dsa-streak.html"><span title="DSA Streak 🔥">🔥</span></a>
+          <a href="aptitude-streak.html"><span title="Aptitude Streak 📈">📈</span></a>
+        </div>
+
+        <div class="profile">
+          <a href="login.html">Login</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+ 
+<div class ="section-title">
+  <h2> General Science</h2>
+  </div>
+  <div id="question-container" class="question-container"></div>
+
+ <script type="module">
+  import { questions } from "../../data/GeneralScience000.js";
+  const container = document.getElementById("question-container");
+
+  questions.forEach((q, i) => {
+    const div = document.createElement("div");
+    div.className = "question-box";
+
+    const optionsHTML = q.options.map((opt, idx) =>
+      `<li>
+        <label>
+          <input type="radio" name="q${i}" value="${opt}">
+          ${opt}
+        </label>
+      </li>`
+    ).join('');
+
+    div.innerHTML = `
+      <p><strong>Q${i + 1}:</strong> ${q.question}</p>
+      <ul>${optionsHTML}</ul>
+      <div class="solution" id="solution-${i}" style="display: none; margin-top: 10px;">
+        <strong>Solution:</strong> ${q.solution}
+      </div>
+    `;
+
+    container.appendChild(div);
+
+    const radios = div.querySelectorAll(`input[name="q${i}"]`);
+    radios.forEach(radio => {
+      radio.addEventListener("change", () => {
+        document.getElementById(`solution-${i}`).style.display = "block";
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

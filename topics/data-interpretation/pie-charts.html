@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pie-Chart</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/aptitude.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <div class="navbar">
+    <a href="../../index.html">Home</a>
+    <a href="../../pages/data-interpretation.html">Back to Data-Interpretation</a>
+  </div>
+
+  <!-- Section Title -->
+  <h2 class="section-title">Pie-Chart</h2>
+
+  <!-- Question Container -->
+  <div id="question-container" class="question-container"></div>
+
+  <!-- Load Questions with Image -->
+  <script type="module">
+    import { questions } from "../../data/data-interpretation/piechart.js";
+
+    const container = document.getElementById("question-container");
+
+    questions.forEach((q, i) => {
+      const div = document.createElement("div");
+      div.className = "question-box";
+
+      div.innerHTML = `
+        <img src="${q.image}"  class="di-image" />
+        <p><strong>Q${i + 1}:</strong> ${q.question}</p>
+        <ul>
+          ${q.options.map((opt, idx) =>
+            `<li><label><input type="radio" name="q${i}"> ${String.fromCharCode(65 + idx)}. ${opt}</label></li>`
+          ).join('')}
+        </ul>
+        <details><summary>Solution</summary><p>${q.solution}</p></details>
+      `;
+
+      container.appendChild(div);
+    });
+  </script>
+</body>
+</html>

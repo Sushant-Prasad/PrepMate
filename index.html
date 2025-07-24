@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PrepMate - Aptitude Hub</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/aptitude.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">PrepMate</a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="study-rooms.html">Study Rooms</a></li>
+        <li><a href="dsa.html">DSA</a></li>
+        <li><a href="aptitude.html">Aptitude</a></li>
+        <li><a href="companies.html">Company Prep</a></li>
+      </ul>
+
+      <div class="right-nav">
+        <div class="search-bar">
+          <input type="text" placeholder="Search topics or questions..." />
+        </div>
+
+        <div class="streaks">
+          <a href="dsa-streak.html"><span title="DSA Streak 🔥">🔥</span></a>
+          <a href="streak.html"><span title="Aptitude Streak 📈">📈</span></a>
+        </div>
+
+        <div class="profile">
+          <a href="login.html">Login</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sidebar + Main Layout -->
+  <div class="layout-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+  <a href="index.html">🏠 Home</a>
+  <a href="pages/aptitude.html">➤ Aptitude</a>
+  <a href="pages/logical-reasoning.html">➤ Reasoning</a>
+  <a href="pages/verbal-ability.html">➤ Verbal</a>
+  <a href="pages/Logical-Puzzle.html">➤ Puzzles</a>
+  <a href="pages/current-affair.html">➤ GK & Current Affairs</a>
+</aside>
+
+    <!-- Main Section -->
+    <div class="main-section">
+      <!-- Search and Filter -->
+      <section class="search-filter">
+        <input type="text" placeholder="Search topics..." id="searchInput" />
+        <select id="categoryFilter">
+          <option value="">All Categories</option>
+          <option value="aptitude">Aptitude</option>
+          <option value="reasoning">Reasoning</option>
+          <option value="verbal">Verbal Ability</option>
+          <option value="gk">General Knowledge</option>
+          <option value="puzzles">Puzzles</option>
+        </select>
+      </section>
+
+      <!-- Card Sections -->
+      <main class="card-container">
+        <div class="card">
+          <h3>General Aptitude</h3>
+          <ul>
+            <li><a href="pages/aptitude.html">Arithmetic Aptitude</a></li>
+            <li><a href="pages/data-interpretation.html">Data Interpretation</a></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Verbal & Reasoning</h3>
+          <ul>
+            <li><a href="pages/verbal-ability.html">Verbal Ability</a></li>
+            <li><a href="pages/verbal-reasoning.html">Verbal Reasoning</a></li>
+            <li><a href="pages/logical-reasoning.html">Logical Reasoning</a></li>
+            <li><a href="pages/non-verbal-reasoning.html">Non Verbal Reasoning</a></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Current Affairs & GK</h3>
+          <ul>
+            <li><a href="pages/current-affair.html">Current Affairs</a></li>
+            <li><a href="pages/general-knowledge.html">General Knowledge</a></li>
+            <li><a href="pages/general-science.html">General Science</a></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Puzzles</h3>
+          <ul>
+            <li><a href="pages/sodoku.html">Sudoku</a></li>
+            <li><a href="pages/Numberpuzzle.html">Number Puzzles</a></li>
+            <li><a href="pages/Logical-Puzzle.html">Logical Puzzles</a></li>
+            <li><a href="pages/clock-puzzle.html">Clock Puzzles</a></li>
+          </ul>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 PrepMate. Built by students, for students.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

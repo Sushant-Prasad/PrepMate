@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sentence-Correction</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/aptitude.css">
+</head>
+<body>
+  <div class="navbar">
+    <a href="../../index.html">Home</a>
+    <a href="../../pages/verbal-ability.html">Back to verbal-ability</a>
+  </div>
+
+  <h2 class="section-title">Sentence-Correction</h2>
+  <div id="question-container" class="question-container"></div>
+
+  <script type="module">
+  import { questions } from "../../data/verbal-ability/Antonyms.js";
+  const container = document.getElementById("question-container");
+
+  questions.forEach((q, i) => {
+    const div = document.createElement("div");
+    div.className = "question-box";
+
+    const optionsHTML = q.options.map((opt, idx) =>
+      `<li>
+        <label>
+          <input type="radio" name="q${i}" value="${opt}">
+          ${opt}
+        </label>
+      </li>`
+    ).join('');
+
+    div.innerHTML = `
+      <p><strong>Q${i + 1}:</strong> ${q.question}</p>
+      <ul>${optionsHTML}</ul>
+      <div class="solution" id="solution-${i}" style="display: none; margin-top: 10px;">
+        <strong>Solution:</strong> ${q.solution}
+      </div>
+    `;
+
+    container.appendChild(div);
+
+    const radios = div.querySelectorAll(`input[name="q${i}"]`);
+    radios.forEach(radio => {
+      radio.addEventListener("change", () => {
+        document.getElementById(`solution-${i}`).style.display = "block";
+      });
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>non-verbal- PREPMATE</title>
+  <link rel="stylesheet" href="../css/aptitude.css" />
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">PrepMate</a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="study-rooms.html">Study Rooms</a></li>
+        <li><a href="dsa.html">DSA</a></li>
+        <li><a href="aptitude.html">Aptitude</a></li>
+        <li><a href="companies.html">Company Prep</a></li>
+      </ul>
+
+      <div class="right-nav">
+        <div class="search-bar">
+          <input type="text" placeholder="Search topics or questions..." />
+        </div>
+
+        <div class="streaks">
+          <a href="dsa-streak.html"><span title="DSA Streak 🔥">🔥</span></a>
+          <a href="aptitude-streak.html"><span title="Aptitude Streak 📈">📈</span></a>
+        </div>
+
+        <div class="profile">
+          <a href="login.html">Login</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+ 
+
+  <!-- Filter / Search -->
+  <div class="filter-container">
+   <a href="../index.html"><-</a> <input type="text" id="searchInput" placeholder="Search Subtopics..." />
+  </div>
+
+  <!-- Subtopics List -->
+  <div class="subtopics-container" id="subtopicList">
+    <!-- Each subtopic is a card linking to its page -->
+    <!-- Links are relative to /topics/aptitude/ -->
+    <a href="../topics/Non-Verbal/Series.html" class="subtopic-card">Series</a>
+    <a href="../topics/Non-Verbal/Mirror Image.html" class="subtopic-card">Mirror Image</a>
+    <a href="../topics/Non-Verbal/Water Image.html" class="subtopic-card">Water Image</a>
+    <a href="../topics/Non-Verbal/Paper Cutting.html" class="subtopic-card">Paper Cutting</a>
+    <a href="../topics/Non-Verbal/Dot Situation.html" class="subtopic-card">Dot Situation</a>
+    <a href="../topics/Non-Verbal/Cube and Diece.html" class="subtopic-card">Cube and Diece</a>
+    <a href="../topics/Non-Verbal/Rules Detection.html" class="subtopic-card">Rules Detection</a>
+    <a href="../topics/Non-Verbal/Paper Folding.html" class="subtopic-card">Paper Folding</a>
+    
+  </div>
+
+
+  <!-- JavaScript for Filter -->
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const subtopicList = document.getElementById("subtopicList").children;
+
+    searchInput.addEventListener("input", () => {
+      const searchTerm = searchInput.value.toLowerCase();
+      Array.from(subtopicList).forEach((item) => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(searchTerm) ? "block" : "none";
+      });
+    });
+  </script>
+
+</body>
+</html>
