@@ -188,25 +188,25 @@
   background: linear-gradient(to right, #f3f4f6, #e0f2fe);
   border-radius: 12px;
   margin: 2rem auto;
-  max-width: 900px;
+  max-width: 1200px; /* Increased width */
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 
 .about-us h3 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #0d6efd;
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
 
 .about-content p {
-  font-size: 1.15rem;
+  font-size: 1.3rem; /* Bigger text */
   color: #374151;
   text-align: center;
-  line-height: 1.7;
+  line-height: 1.8;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 900px;
 }
 
 /* Logo */
@@ -316,30 +316,7 @@
   background: #0b5ed7;
 }
 
-/* Responsive Navigation */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background: #fff;
-    width: 100%;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    z-index: 100;
-  }
-  .nav-links.active {
-    display: flex;
-  }
-  .hamburger {
-    display: block;
-  }
-  .right-nav {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-}
+
 
 @media (max-width: 900px) {
   .stats-grid {
