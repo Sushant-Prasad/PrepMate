@@ -54,23 +54,26 @@
     <!-- ======= Main Layout ======= -->
     <section class="companies-layout">
       <!-- ===== Sidebar Section ===== -->
-      <aside class="sidebar">
-        <h3>Companies</h3>
+<aside class="sidebar">
+  <h3>Companies</h3>
 
-        <!-- Search Bar for Companies -->
-        <div class="sidebar-search">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input
-            type="text"
-            placeholder="Search companies..."
-            id="companySearch"
-          />
-        </div>
+  <!-- Search Bar for Companies -->
+  <div class="sidebar-search">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input
+      type="text"
+      placeholder="Search companies..."
+      id="companySearch"
+    />
+  </div>
 
-        <!-- Company List (Dynamically Populated by JS) -->
-        <ul class="company-list" id="companyList"></ul>
-      </aside>
+  <!-- Featured Companies (visible only on small screens) -->
+  <div id="featuredCompanies" class="featured-companies"></div>
+  <button id="viewAllBtn" class="view-all-btn">View All <i class="fa-solid fa-arrow-right"></i></button>
 
+  <!-- Company List (Dynamically Populated by JS) -->
+  <ul class="company-list" id="companyList"></ul>
+</aside>
       <!-- ===== Right Main Content Section ===== -->
       <div class="content-banner">
         <div class="company-content" id="companyContent">

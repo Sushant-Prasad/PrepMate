@@ -10,7 +10,7 @@
           link: "https://leetcode.com/problems/two-sum/description/",
         },
         {
-          title: "Maximum Subarray",
+          title: "https://leetcode.com/problems/maximum-subarray/description/",
           difficulty: "Medium",
           link: "https://example.com/amazon/dsa/max-subarray",
         },

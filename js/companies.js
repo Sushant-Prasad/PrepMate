@@ -1,92 +1,127 @@
-
-
 const companyList = document.getElementById("companyList");
 const dsaContent = document.getElementById("dsaContent");
 const aptitudeContent = document.getElementById("aptitudeContent");
 const tabSection = document.getElementById("tabSection");
 const placeholderMessage = document.getElementById("placeholderMessage");
 const companyContent = document.getElementById("companyContent");
+const featuredCompaniesDiv = document.getElementById("featuredCompanies");
+const viewAllBtn = document.getElementById("viewAllBtn");
 
 companyContent.style.backgroundImage = "url('./image/img3.png')";
 
-// Add event listener to each company link dynamically
-companyQues.forEach((companyObj) => {
-  const li = document.createElement("li");
-  const a = document.createElement("a");
-  a.href = "#";
-  a.textContent = companyObj.companyName;
+// Helper: Render company links
+function renderCompanyLinks(list, container) {
+  container.innerHTML = "";
+  list.forEach((companyObj) => {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = "#";
+    a.textContent = companyObj.companyName;
 
-  a.addEventListener("click", (e) => {
-    e.preventDefault();
+    // Add shared styling class
+    a.className = "featured-company-link";
 
-    // Highlight active company
-    document.querySelectorAll("#companyList a").forEach((link) => {
-      link.classList.remove("active-company");
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.querySelectorAll("#companyList a").forEach((link) => {
+        link.classList.remove("active-company");
+      });
+      a.classList.add("active-company");
+      showCompanyData(companyObj);
     });
-    a.classList.add("active-company");
 
-    showCompanyData(companyObj);
+    li.appendChild(a);
+    container.appendChild(li);
   });
+}
 
-  li.appendChild(a);
-  companyList.appendChild(li);
+// Responsive logic
+function handleCompanySidebarDisplay() {
+  if (window.innerWidth <= 768) {
+    featuredCompaniesDiv.style.display = "block";
+    viewAllBtn.style.display = "block";
+    companyList.style.display = "none";
+  } else {
+    featuredCompaniesDiv.style.display = "none";
+    viewAllBtn.style.display = "none";
+    companyList.style.display = "flex";
+  }
+}
+
+// Featured Companies
+const featuredCompanies = companyQues.slice(0, 4);
+featuredCompaniesDiv.innerHTML = "<h5>Featured</h5>";
+const featuredList = document.createElement("ul");
+featuredList.className = "featured-list";
+renderCompanyLinks(featuredCompanies, featuredList);
+featuredCompaniesDiv.appendChild(featuredList);
+
+// All Companies
+renderCompanyLinks(companyQues, companyList);
+
+// View All Button
+viewAllBtn.addEventListener("click", () => {
+  featuredCompaniesDiv.style.display = "none";
+  viewAllBtn.style.display = "none";
+  companyList.style.display = "flex";
 });
 
+// Handle screen size on load and resize
+handleCompanySidebarDisplay();
+window.addEventListener("resize", handleCompanySidebarDisplay);
+
+// Show company data
+
 function showCompanyData(companyObj) {
+  
+if (window.innerWidth <= 768) {
+  featuredCompaniesDiv.style.display = "none";
+  viewAllBtn.style.display = "none";
+  companyList.style.display = "flex";
+}
+
   companyContent.style.backgroundImage = "url('./image/img5.webp')";
   placeholderMessage.style.display = "none";
   tabSection.style.display = "block";
-
   dsaContent.innerHTML = "";
   aptitudeContent.innerHTML = "";
 
-  // Render DSA
   for (const topic in companyObj.dsa) {
     companyObj.dsa[topic].forEach((q) => {
       dsaContent.innerHTML += createQuestionCard(q);
     });
   }
 
-  // Render Aptitude dropdown sections
   companyObj.aptitude.forEach((section) => {
     const wrapper = document.createElement("div");
     wrapper.className = "aptitude-item";
 
     const header = document.createElement("div");
     header.className = "aptitude-header";
-   header.addEventListener("click", () => {
-  header.classList.toggle("open");
-  const body = header.nextElementSibling;
-  const isOpen = body.style.display === "block";
-  body.style.display = isOpen ? "none" : "block";
+    header.addEventListener("click", () => {
+      header.classList.toggle("open");
+      const body = header.nextElementSibling;
+      const isOpen = body.style.display === "block";
+      body.style.display = isOpen ? "none" : "block";
 
-  if (!isOpen) {
-    // Section is being opened — reset previous state
-    const allQuestions = body.querySelectorAll(".aptitude-question");
-
-    allQuestions.forEach((qDiv) => {
-      // Remove all option styles
-      qDiv.querySelectorAll("li[data-option]").forEach((option) => {
-        option.classList.remove("correct", "wrong");
-      });
-
-      // Hide solution
-      const solution = qDiv.querySelector(".solution");
-      if (solution) solution.style.display = "none";
-
-      // Remove "solution-shown" marker if any
-      qDiv.classList.remove("solution-shown");
+      if (!isOpen) {
+        const allQuestions = body.querySelectorAll(".aptitude-question");
+        allQuestions.forEach((qDiv) => {
+          qDiv.querySelectorAll("li[data-option]").forEach((option) => {
+            option.classList.remove("correct", "wrong");
+          });
+          const solution = qDiv.querySelector(".solution");
+          if (solution) solution.style.display = "none";
+          qDiv.classList.remove("solution-shown");
+        });
+      }
     });
-  }
-});
-
 
     const categoryClassMap = {
       "Numerical Ability": "numerical",
       Reasoning: "reasoning",
       "Verbal Ability": "verbal",
     };
-
     const badgeClass = categoryClassMap[section.category] || "default";
 
     header.innerHTML = `
@@ -110,46 +145,32 @@ function showCompanyData(companyObj) {
         .join("");
 
       qDiv.innerHTML = `
-    <p><strong>Q${index + 1}:</strong> ${question.statement}</p>
-    <ul class="option-list">
-      ${optionsHtml}
-    </ul>
-    <button class="check-btn">Check Solution</button>
-    <div class="solution" style="display: none;">
-      <p><strong>Correct Answer:</strong> ${question.answer}</p>
-      <p><strong>Explanation:</strong> ${
-        question.explanation || "No explanation available."
-      }</p>
-    </div>
-  `;
+        <p><strong>Q${index + 1}:</strong> ${question.statement}</p>
+        <ul class="option-list">${optionsHtml}</ul>
+        <button class="check-btn">Check Solution</button>
+        <div class="solution" style="display: none;">
+          <p><strong>Correct Answer:</strong> ${question.answer}</p>
+          <p><strong>Explanation:</strong> ${question.explanation || "No explanation available."}</p>
+        </div>
+      `;
 
-      // Handle option selection with multiple attempts before solution
-const options = qDiv.querySelectorAll("li[data-option]");
-options.forEach((optionEl) => {
-  optionEl.addEventListener("click", () => {
-    // Don't allow option change after showing solution
-    if (qDiv.classList.contains("solution-shown")) return;
+      const options = qDiv.querySelectorAll("li[data-option]");
+      options.forEach((optionEl) => {
+        optionEl.addEventListener("click", () => {
+          if (qDiv.classList.contains("solution-shown")) return;
 
-    // Clear all previous selections
-    options.forEach((el) => {
-      el.classList.remove("correct", "wrong");
-    });
+          options.forEach((el) => el.classList.remove("correct", "wrong"));
+          const selected = optionEl.getAttribute("data-option");
+          const correct = question.answer;
+          optionEl.classList.add(selected === correct ? "correct" : "wrong");
+        });
+      });
 
-    const selected = optionEl.getAttribute("data-option");
-    const correct = question.answer;
-
-    optionEl.classList.add(selected === correct ? "correct" : "wrong");
-  });
-});
-
-
-
-      // Toggle solution
       const checkBtn = qDiv.querySelector(".check-btn");
       const solutionDiv = qDiv.querySelector(".solution");
       checkBtn.addEventListener("click", () => {
-        solutionDiv.style.display =
-          solutionDiv.style.display === "block" ? "none" : "block";
+        solutionDiv.style.display = solutionDiv.style.display === "block" ? "none" : "block";
+        qDiv.classList.add("solution-shown");
       });
 
       body.appendChild(qDiv);
@@ -163,13 +184,9 @@ options.forEach((optionEl) => {
   switchTab("dsaTab");
 }
 
-// Tab switching
-document
-  .getElementById("dsaTab")
-  .addEventListener("click", () => switchTab("dsaTab"));
-document
-  .getElementById("aptitudeTab")
-  .addEventListener("click", () => switchTab("aptitudeTab"));
+// Tabs
+document.getElementById("dsaTab").addEventListener("click", () => switchTab("dsaTab"));
+document.getElementById("aptitudeTab").addEventListener("click", () => switchTab("aptitudeTab"));
 
 function switchTab(tabId) {
   const dsaTab = document.getElementById("dsaTab");
@@ -195,20 +212,14 @@ function createQuestionCard(question, index = "") {
     : `<i class="far fa-circle check-icon" style="color: gray;"></i>`;
 
   return `
-    <div class="question-item" onclick="toggleComplete(this.querySelector('i'), '${
-      question.title
-    }')">
+    <div class="question-item" onclick="toggleComplete(this.querySelector('i'), '${question.title}')">
       <div class="question-left">
         ${checkIcon}
-        <a href="${question.link}" target="_blank" class="question-title">${
-    index ? index + ". " : ""
-  }${question.title}</a>
+        <a href="${question.link}" target="_blank" class="question-title">${index ? index + ". " : ""}${question.title}</a>
       </div>
       <div class="question-right">
         <span class="accuracy">${question.accuracy || ""}</span>
-        <span class="difficulty ${getDifficultyClass(question.difficulty)}">${
-    question.difficulty
-  }</span>
+        <span class="difficulty ${getDifficultyClass(question.difficulty)}">${question.difficulty}</span>
       </div>
     </div>
   `;
@@ -216,15 +227,11 @@ function createQuestionCard(question, index = "") {
 
 function getDifficultyClass(difficulty) {
   switch (difficulty.toLowerCase()) {
-    case "easy":
-      return "easy";
+    case "easy": return "easy";
     case "medium":
-    case "med.":
-      return "med";
-    case "hard":
-      return "hard";
-    default:
-      return "";
+    case "med.": return "med";
+    case "hard": return "hard";
+    default: return "";
   }
 }
 
