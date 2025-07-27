@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrepMate - Aptitude</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/aptitude.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">PrepMate</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="study-rooms.html">Study Rooms</a></li>
+          <li><a href="dsa.html">DSA</a></li>
+          <li><a href="aptitude.html">Aptitude</a></li>
+          <li><a href="companies.html">Company Prep</a></li>
+        </ul>
+        <div class="right-nav">
+          <div class="search-bar">
+            <input type="text" placeholder="Search topics or questions..." />
+          </div>
+          <div class="streaks">
+            <a href="dsa-streak.html" title="DSA Streak 🔥">🔥</a>
+            <a href="aptitude-streak.html" title="Aptitude Streak 📈">📈</a>
+          </div>
+          <div class="profile">
+            <a href="login.html">Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="aptitude-layout">
+      <!-- Sidebar: Categories -->
+      <aside class="sidebar">
+        <h3>Categories</h3>
+        <ul id="categoryList" class="category-list"></ul>
+      </aside>
+
+      <!-- Main Content: Topic Cards -->
+      <div class="content">
+        <h2 id="categoryTitle">Select a category</h2>
+        <div id="topicsContainer" class="topics-container"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>&copy; 2025 PrepMate. Built by students, for students.</footer>
+
+    <!-- Scripts -->
+    <script src="data/aptitudeData.js"></script>
+    <script src="js/aptitude.js"></script>
+  </body>
+</html>

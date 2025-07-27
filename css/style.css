@@ -140,4 +140,5 @@ footer {
   background-color: #000000;
   font-size: 0.9rem;
   color: #ffffff;
+  z-index: 999;
 }

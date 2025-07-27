@@ -73,7 +73,7 @@ window.addEventListener("resize", handleCompanySidebarDisplay);
 // Show company data
 
 function showCompanyData(companyObj) {
-  
+  // Ensure sidebar (full list) is visible on small screens after a company is selected
 if (window.innerWidth <= 768) {
   featuredCompaniesDiv.style.display = "none";
   viewAllBtn.style.display = "none";
