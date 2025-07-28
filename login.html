@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrepMate – Company-wise Prep</title>
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- External CSS Files -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/loginreg.css" />
+  </head>
+
+  <body>
+    <!-- ======= Navbar ======= -->
+    <header>
+      <nav class="navbar">
+        <!-- Website Logo -->
+        <div class="logo">
+          <a href="index.html">PrepMate</a>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="study-rooms.html">Study Rooms</a></li>
+          <li><a href="dsa.html">DSA</a></li>
+          <li><a href="aptitude.html">Aptitude</a></li>
+          <li><a href="companies.html">Company Prep</a></li>
+        </ul>
+
+        <!-- Right Section: Search, Streaks, Profile -->
+        <div class="right-nav">
+          <!-- Search Bar -->
+          <div class="search-bar">
+            <input type="text" placeholder="Search topics or questions..." />
+          </div>
+
+          <!-- Streak Icons -->
+          <div class="streaks">
+            <a href="dsa-streak.html" title="DSA Streak 🔥">🔥</a>
+            <a href="aptitude-streak.html" title="Aptitude Streak 📈">📈</a>
+          </div>
+
+          <!-- Login/Profile Link -->
+          <div class="profile">
+            <a href="login.html">Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ======= Main Layout ======= -->
+
+    <div class="container">
+      <div class="left-panel">
+        <header class="header">
+          <div class="logo-container">
+            <span class="logo-text">Prepmate </span>
+          </div>
+        </header>
+        <div class="hero-content">
+          <h1>Prep smart, land your dream job.</h1>
+          <p>Join group discussions, solve real interview questions,</p>
+          <p>and get ready to crack your next opportunity.</p>
+          <div class="pagination-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+      <div class="right-panel">
+        <div class="login-form-container">
+          <h2>Welcome Back to Prepmate!</h2>
+          <p class="subtitle">Sign in in your account</p>
+
+          <form class="login-form">
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password-reg">Password</label>
+              <div class="password-input-wrapper">
+                <input
+                  type="password"
+                  id="password-reg"
+                  name="password"
+                  placeholder="Enter your password"
+                  required
+                />
+                <span
+                  class="password-toggle"
+                  data-target="password-reg"
+                  aria-label="Show password"
+                >
+                </span>
+              </div>
+            </div>
+            <div class="form-options">
+              <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember" checked />
+                <label for="remember">Remember Me</label>
+              </div>
+              <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+          </form>
+
+          <div class="divider">
+            <span>Or Login</span>
+          </div>
+
+          <div class="social-login">
+            <button class="social-button google">
+              <img
+                src="/image/download (8).jpeg"
+                alt="Google icon"
+                class="social-icon"
+              />
+              <span>Continue with Google</span>
+            </button>
+            <button class="social-button facebook">
+              <img
+                src="/image/Facebook Icon Design On Transparent Background Png 3.jpeg"
+                alt="Facebook icon"
+                class="social-icon"
+              />
+              <span>Continue with Facebook</span>
+            </button>
+          </div>
+
+          <p class="register-text">
+            Don't have any account?
+            <a href="registration.html" class="register-link">Register</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Footer ======= -->
+    <footer>&copy; 2025 PrepMate. Built by students, for students.</footer>
+
+    <!-- ======= External JavaScript ======= -->
+    <script src="js/loginreg.js"></script>
+  </body>
+</html>

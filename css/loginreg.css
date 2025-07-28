@@ -1,0 +1,513 @@
+.container {
+  flex: 1;
+  display: flex;
+}
+.left-panel {
+  flex: 1;
+  background-image: url("/image/2.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  color: white;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1); /* Makes the icon white */
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.sign-in-button {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-button:hover {
+  background-color: #000;
+}
+
+.hero-content {
+  text-align: left;
+  margin-bottom: 80px; /* Space from bottom */
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin: 5px 0;
+  opacity: 0.9;
+}
+
+.pagination-dots {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: white;
+}
+
+.right-panel {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-form-container h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.login-form-container .subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #888;
+}
+
+.password-input-wrapper {
+  position: relative;
+}
+
+.password-input-wrapper input {
+  padding-right: 40px; /* Make space for the eye icon */
+}
+
+.password-toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+  font-size: 18px;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.remember-me input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #333; /* Dark checkbox */
+}
+
+.forgot-password {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #333;
+}
+
+.login-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 25px;
+}
+
+.login-button:hover {
+  background-color: #000;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #999;
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #eee;
+}
+
+.divider:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: .25em;
+}
+
+.social-login {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.social-button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.social-button:hover {
+  border-color: #bbb;
+  background-color: #f9f9f9;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.register-text {
+  font-size: 15px;
+  color: #666;
+}
+
+.register-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.register-link:hover {
+  color: #000;
+}
+
+.eye-icon {
+  width: 20px;
+  height: 22px;
+  cursor: pointer;
+} 
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .left-panel {
+    padding: 30px;
+    min-height: 300px; /* Ensure left panel has some height on small screens */
+    justify-content: flex-start; /* Align content to top */
+    gap: 20px;
+  }
+
+  .hero-content {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .pagination-dots {
+    display: none; /* Hide dots on smaller screens if desired */
+  }
+
+  .right-panel {
+    padding: 30px;
+  }
+
+  .login-form-container h2 {
+    font-size: 28px;
+  }
+
+  .social-login {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .left-panel {
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .right-panel {
+    padding: 20px;
+  }
+
+  .login-form-container {
+    max-width: 100%;
+  }
+
+  .login-form-container h2 {
+    font-size: 24px;
+  }
+}
+
+.register-form-container {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.register-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 25px;
+}
+
+.register-button:hover {
+  background-color: #000;
+}
+
+.login-text {
+  font-size: 15px;
+  color: #666;
+}
+
+.login-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #000;
+}
+
+/* Media query for 1024px width */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 95%;
+    width: 95%;
+    height: auto;
+    min-height: 95vh;
+  }
+  
+  .left-panel {
+    padding: 35px;
+    min-height: 400px;
+  }
+  
+  .hero-content h1 {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+  
+  .hero-content p {
+    font-size: 17px;
+  }
+  
+  .right-panel {
+    padding: 35px;
+  }
+  
+  .login-form-container {
+    max-width: 380px;
+  }
+  
+  .login-form-container h2 {
+    font-size: 30px;
+  }
+  
+  .form-group input {
+    padding: 11px 14px;
+    font-size: 15px;
+  }
+  
+  .login-button,
+  .register-button {
+    padding: 14px;
+    font-size: 17px;
+  }
+  
+  .social-button {
+    padding: 11px;
+    font-size: 15px;
+  }
+}
+
+/* Specific adjustments for exactly 1024px */
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+    transform: scale(0.95);
+    transform-origin: center;
+  }
+}
+
+/* Additional CSS for better eye icon functionality */
+.password-toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.password-toggle:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.eye-icon {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+/* Active state when password is visible */
+.password-toggle.active .eye-icon {
+  opacity: 0.7;
+  filter: brightness(0.8);
+}
+
+/* Focus styles for accessibility */
+.password-toggle:focus {
+  outline: 2px solid #333;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Make sure the toggle button is clickable */
+.password-input-wrapper {
+  position: relative;
+}
+
+.password-input-wrapper input {
+  padding-right: 45px; /* Increased padding to prevent text overlap */
+}
