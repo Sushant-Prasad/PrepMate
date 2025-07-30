@@ -1,20 +1,20 @@
 class MyNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <!-- Navbar -->
+  <!-- Navbar -->
   <nav class="bg-white shadow-sm fixed top-0 inset-x-0 z-50" id="nav">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16 items-center">
         <!-- Left: Logo & Desktop Nav -->
         <div class="flex items-center">
-          <a href="index.html" class="">
-            <img src="assets/logo.png" alt="PrepMate Logo" id="logo"/>
+          <a href="./index.html">
+            <img src="./assets/logo.png" alt="PrepMate Logo" id="logo"/>
           </a>
           <div class="hidden lg:flex space-x-8 ml-6">
-            <a href="../study-rooms.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Study Rooms</a>
-            <a href="../dsa.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">DSA</a>
-            <a href="../aptitude.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Aptitude</a>
-            <a href="../companies.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Company Prep</a>
+            <a href="./study-rooms.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Study Rooms</a>
+            <a href="./dsa.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">DSA</a>
+            <a href="./aptitude.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Aptitude</a>
+            <a href="./companies.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Company Prep</a>
           </div>
         </div>
 
@@ -29,18 +29,17 @@ class MyNav extends HTMLElement {
           <!-- Streak Icons - Desktop -->
           <div class="hidden lg:flex items-center space-x-4 mr-4">
             <div class="flex items-center text-yellow-600">
-              <span class="text-xl mr-1"><a href="dsa-streak.html"><i class="fa-solid fa-fire"></i></a></span><span class="text-sm font-medium">5</span>
+              <span class="text-xl mr-1"><a href="./dsa-streak.html"><i class="fa-solid fa-fire"></i></a></span><span class="text-sm font-medium">5</span>
             </div>
             <div class="flex items-center text-blue-600">
-              <span class="text-xl mr-1"><a href="aptitude-streak.html"><i class="fa-solid fa-brain"></i>
-</a></span><span class="text-sm font-medium">3</span>
+              <span class="text-xl mr-1"><a href="./aptitude-streak.html"><i class="fa-solid fa-brain"></i></a></span><span class="text-sm font-medium">3</span>
             </div>
           </div>
 
           <!-- Login - Desktop -->
           <div class="hidden lg:block">
-            <button class="bg-green-500 hover:bg-green-700 text-white px-4 py-2 rounded-md" id="loginButton"><a href="login.html">Login</a></button>
-            <a href="../profile.html"><img src="assets/profile.jpg" class="h-10 w-10 rounded-full hidden" id="profile"/></a>
+            <button class="bg-green-500 hover:bg-green-700 text-white px-4 py-2 rounded-md" id="loginButton"><a href="./login.html">Login</a></button>
+            <a href="./profile.html"><img src="./assets/profile.jpg" class="h-10 w-10 rounded-full hidden" id="profile"/></a>
           </div>
 
           <!-- Mobile Menu Button -->
@@ -58,21 +57,21 @@ class MyNav extends HTMLElement {
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="hidden lg:hidden inset-0 bg-white z-40 pt-2  absolute top-0 h-max">
+    <div id="mobileMenu" class="hidden lg:hidden inset-0 bg-white z-40 pt-2 absolute top-0 h-max">
       <div class="space-y-4 h-max bg-white px-5 pb-4">
         <!-- Close Button -->
         <div class="flex justify-end">
-          <a href="index.html" class="absolute left-0 -mt-10">
-            <img src="assets/logo.png" alt="PrepMate Logo" id="logo"/>
+          <a href="./index.html" class="absolute left-0 -mt-10">
+            <img src="./assets/logo.png" alt="PrepMate Logo" id="logo"/>
           </a>
           <button id="menuClose" class="text-green-600 hover:bg-green-50 p-2 rounded-md text-xl">❌</button>
         </div>
 
         <!-- Nav Links -->
-        <a href="study-rooms.html" class="block text-lg text-green-600 hover:bg-green-50 px-4 py-2 rounded-lg">Study Rooms</a>
-        <a href="dsa.html" class="block text-lg text-green-600 hover:bg-green-50 px-4 py-2 rounded-lg">DSA</a>
-        <a href="aptitude.html" class="block text-lg text-green-600 hover:bg-green-50 px-4 py-2 rounded-lg">Aptitude</a>
-        <a href="companies.html" class="block text-lg text-green-600 hover:bg-grlgn-50 px-4 py-2 rounded-lg">Company Prep</a>
+        <a href="./study-rooms.html" class="block text-lg text-green-600 hover:bg-green-50 px-4 py-2 rounded-lg">Study Rooms</a>
+        <a href="./dsa.html" class="block text-lg text-green-600 hover:bg-green-50 px-4 py-2 rounded-lg">DSA</a>
+        <a href="./aptitude.html" class="block text-lg text-green-600 hover:bg-green-50 px-4 py-2 rounded-lg">Aptitude</a>
+        <a href="./companies.html" class="block text-lg text-green-600 hover:bg-green-50 px-4 py-2 rounded-lg">Company Prep</a>
 
         <!-- Search -->
         <input type="text" placeholder="Search topics or questions..."
@@ -81,29 +80,26 @@ class MyNav extends HTMLElement {
         <!-- Streak Icons -->
         <div class="flex justify-center space-x-6 py-4">
           <div class="flex items-center text-yellow-600">
-            <span class="text-xl mr-2"><a href="dsa-streak.html"><i class="fa-solid fa-fire"></i></a></span><span class="text-base font-medium">5 day streak</span>
+            <span class="text-xl mr-2"><a href="./dsa-streak.html"><i class="fa-solid fa-fire"></i></a></span><span class="text-base font-medium">5 day streak</span>
           </div>
           <div class="flex items-center text-blue-600">
-            <span class="text-xl mr-2"><a href="aptitude-streak.html"><i class="fa-solid fa-brain"></i>
-</a></span><span class="text-base font-medium">3 day streak</span>
+            <span class="text-xl mr-2"><a href="./aptitude-streak.html"><i class="fa-solid fa-brain"></i></a></span><span class="text-base font-medium">3 day streak</span>
           </div>
         </div>
 
         <!-- Login -->
-       <a href="login.html"> <button class="w-full bg-green-500 hover:bg-green-700 text-white py-3 rounded-md">Login</button></a>
+        <a href="./login.html"><button class="w-full bg-green-500 hover:bg-green-700 text-white py-3 rounded-md">Login</button></a>
       </div>
     </div>
   </nav>
-
-  <!-- Spacer -->
   <div class="pt-20"></div>
     `;
 
-    // Check login status and update UI accordingly
     if (sessionStorage.getItem("isLoggedIn") === "true") {
       this.showProfile();
     }
   }
+
   showProfile() {
     const profile = this.querySelector("#profile");
     const loginButton = this.querySelector("#loginButton");
@@ -115,6 +111,9 @@ class MyNav extends HTMLElement {
   }
 }
 customElements.define("my-nav", MyNav);
+
+
+
 
 class MyFoot extends HTMLElement {
   connectedCallback() {
