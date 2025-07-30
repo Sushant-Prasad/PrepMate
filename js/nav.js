@@ -11,10 +11,10 @@ class MyNav extends HTMLElement {
             <img src="assets/logo.png" alt="PrepMate Logo" id="logo"/>
           </a>
           <div class="hidden lg:flex space-x-8 ml-6">
-            <a href="../study-rooms.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Study Rooms</a>
-            <a href="../dsa.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">DSA</a>
-            <a href="../aptitude.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Aptitude</a>
-            <a href="../companies.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Company Prep</a>
+            <a href="study-rooms.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Study Rooms</a>
+            <a href="dsa.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">DSA</a>
+            <a href="aptitude.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Aptitude</a>
+            <a href="companies.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Company Prep</a>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ class MyNav extends HTMLElement {
           <!-- Login - Desktop -->
           <div class="hidden lg:block">
             <button class="bg-green-500 hover:bg-green-700 text-white px-4 py-2 rounded-md" id="loginButton"><a href="login.html">Login</a></button>
-            <a href="../profile.html"><img src="assets/profile.jpg" class="h-10 w-10 rounded-full hidden" id="profile"/></a>
+            <a href="profile.html"><img src="assets/profile.jpg" class="h-10 w-10 rounded-full hidden" id="profile"/></a>
           </div>
 
           <!-- Mobile Menu Button -->
