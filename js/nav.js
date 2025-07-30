@@ -11,10 +11,10 @@ class MyNav extends HTMLElement {
             <img src="assets/logo.png" alt="PrepMate Logo" id="logo"/>
           </a>
           <div class="hidden lg:flex space-x-8 ml-6">
-            <a href="../study-rooms.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Study Rooms</a>
-            <a href="../dsa.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">DSA</a>
-            <a href="../aptitude.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Aptitude</a>
-            <a href="../companies.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Company Prep</a>
+            <a href="./study-rooms.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Study Rooms</a>
+            <a href="./dsa.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">DSA</a>
+            <a href="./aptitude.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Aptitude</a>
+            <a href="./companies.html" class="text-green-600 hover:text-green-800 hover:border-b-2 border-green-500">Company Prep</a>
           </div>
         </div>
 
