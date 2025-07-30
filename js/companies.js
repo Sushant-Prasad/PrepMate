@@ -7,7 +7,7 @@ const companyContent = document.getElementById("companyContent");
 const featuredCompaniesDiv = document.getElementById("featuredCompanies");
 const viewAllBtn = document.getElementById("viewAllBtn");
 
-companyContent.style.backgroundImage = "url('./image/img3.png')";
+companyContent.style.backgroundImage = "url('assets/img3.png')";
 
 // Helper: Render company links
 function renderCompanyLinks(list, container) {
@@ -73,7 +73,7 @@ window.addEventListener("resize", handleCompanySidebarDisplay);
 // Show company data
 
 function showCompanyData(companyObj) {
-  // Ensure sidebar (full list) is visible on small screens after a company is selected
+  
 if (window.innerWidth <= 768) {
   featuredCompaniesDiv.style.display = "none";
   viewAllBtn.style.display = "none";

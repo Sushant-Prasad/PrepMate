@@ -1,117 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PrepMate – Company-wise Prep</title>
 
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrepMate – Company-wise Prep</title>
 
-    <!-- External CSS Files -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/companies.css" />
-  </head>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="assets/Fav-icon-1.png">
 
-  <body>
-    <!-- ======= Navbar ======= -->
-    <header>
-      <nav class="navbar">
-        <!-- Website Logo -->
-        <div class="logo">
-          <a href="index.html">PrepMate</a>
+
+  <!-- External CSS Files -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/companies.css" />
+</head>
+
+<body>
+  <!-- ======= Navbar ======= -->
+  <my-nav></my-nav>
+
+  <!-- ======= Main Layout ======= -->
+  <section class="companies-layout">
+    <!-- ===== Sidebar Section ===== -->
+    <aside class="sidebar">
+      <h3>Companies</h3>
+
+      <!-- Search Bar for Companies -->
+      <div class="sidebar-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search companies..." id="companySearch" />
+      </div>
+
+      <!-- Featured Companies (visible only on small screens) -->
+      <div id="featuredCompanies" class="featured-companies"></div>
+      <button id="viewAllBtn" class="view-all-btn">View All <i class="fa-solid fa-arrow-right"></i></button>
+
+      <!-- Company List (Dynamically Populated by JS) -->
+      <ul class="company-list" id="companyList"></ul>
+    </aside>
+    <!-- ===== Right Main Content Section ===== -->
+    <div class="content-banner">
+      <div class="company-content" id="companyContent">
+        <!-- Placeholder Text (Before a company is selected) -->
+        <div id="placeholderMessage">
+          <h2>Your Placement Preparation Starts Here.</h2>
+          <p>
+            Master company-specific DSA problems & Aptitude questions here.
+          </p>
         </div>
 
-        <!-- Navigation Links -->
-        <ul class="nav-links">
-          <li><a href="study-rooms.html">Study Rooms</a></li>
-          <li><a href="dsa.html">DSA</a></li>
-          <li><a href="aptitude.html">Aptitude</a></li>
-          <li><a href="companies.html">Company Prep</a></li>
-        </ul>
-
-        <!-- Right Section: Search, Streaks, Profile -->
-        <div class="right-nav">
-          <!-- Search Bar -->
-          <div class="search-bar">
-            <input type="text" placeholder="Search topics or questions..." />
+        <!-- Tabs Section: DSA & Aptitude -->
+        <div class="tab-section" id="tabSection" style="display: none; height: 100%;">
+          <!-- Tab Buttons -->
+          <div class="tabs">
+            <button id="dsaTab" class="active">DSA</button>
+            <button id="aptitudeTab">Aptitude</button>
           </div>
 
-          <!-- Streak Icons -->
-          <div class="streaks">
-            <a href="dsa-streak.html" title="DSA Streak 🔥">🔥</a>
-            <a href="aptitude-streak.html" title="Aptitude Streak 📈">📈</a>
+          <!-- Tab Content Area -->
+          <div id="dsaContent" class="tab-content">
+            <!-- DSA questions will be dynamically injected here -->
           </div>
 
-          <!-- Login/Profile Link -->
-          <div class="profile">
-            <a href="login.html">Login</a>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- ======= Main Layout ======= -->
-    <section class="companies-layout">
-      <!-- ===== Sidebar Section ===== -->
-<aside class="sidebar">
-  <h3>Companies</h3>
-
-  <!-- Search Bar for Companies -->
-  <div class="sidebar-search">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <input
-      type="text"
-      placeholder="Search companies..."
-      id="companySearch"
-    />
-  </div>
-
-  <!-- Featured Companies (visible only on small screens) -->
-  <div id="featuredCompanies" class="featured-companies"></div>
-  <button id="viewAllBtn" class="view-all-btn">View All <i class="fa-solid fa-arrow-right"></i></button>
-
-  <!-- Company List (Dynamically Populated by JS) -->
-  <ul class="company-list" id="companyList"></ul>
-</aside>
-      <!-- ===== Right Main Content Section ===== -->
-      <div class="content-banner">
-        <div class="company-content" id="companyContent">
-          <!-- Placeholder Text (Before a company is selected) -->
-          <div id="placeholderMessage">
-            <h2>Your Placement Preparation Starts Here.</h2>
-            <p>
-              Master company-specific DSA problems & Aptitude questions here.
-            </p>
-          </div>
-
-          <!-- Tabs Section: DSA & Aptitude -->
-          <div class="tab-section" id="tabSection" style="display: none">
-            <!-- Tab Buttons -->
-            <div class="tabs">
-              <button id="dsaTab" class="active">DSA</button>
-              <button id="aptitudeTab">Aptitude</button>
-            </div>
-
-            <!-- Tab Content Area -->
-            <div id="dsaContent" class="tab-content">
-              <!-- DSA questions will be dynamically injected here -->
-            </div>
-
-            <div id="aptitudeContent" class="tab-content" style="display: none">
-              <!-- Aptitude questions will be dynamically injected here -->
-            </div>
+          <div id="aptitudeContent" class="tab-content" style="display: none">
+            <!-- Aptitude questions will be dynamically injected here -->
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ======= Footer ======= -->
-    <footer>&copy; 2025 PrepMate. Built by students, for students.</footer>
+  <!-- ======= Footer ======= -->
+  <my-foot></my-foot>
 
-    <!-- ======= External JavaScript ======= -->
-     <script src="data/companyPrep.js"></script>
-    <script src="js/companies.js"></script>
+  <!-- ======= External JavaScript ======= -->
+  <script src="js/companyPrep.js"></script>
+  <script src="js/companies.js"></script>
+  <script src="js/nav.js"></script>
 
-  </body>
+
+</body>
+
 </html>

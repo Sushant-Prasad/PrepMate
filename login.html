@@ -15,51 +15,19 @@
     />
 
     <!-- External CSS Files -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/Fav-icon-1.png">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/loginreg.css" />
   </head>
 
   <body>
     <!-- ======= Navbar ======= -->
-    <header>
-      <nav class="navbar">
-        <!-- Website Logo -->
-        <div class="logo">
-          <a href="index.html">PrepMate</a>
-        </div>
-
-        <!-- Navigation Links -->
-        <ul class="nav-links">
-          <li><a href="study-rooms.html">Study Rooms</a></li>
-          <li><a href="dsa.html">DSA</a></li>
-          <li><a href="aptitude.html">Aptitude</a></li>
-          <li><a href="companies.html">Company Prep</a></li>
-        </ul>
-
-        <!-- Right Section: Search, Streaks, Profile -->
-        <div class="right-nav">
-          <!-- Search Bar -->
-          <div class="search-bar">
-            <input type="text" placeholder="Search topics or questions..." />
-          </div>
-
-          <!-- Streak Icons -->
-          <div class="streaks">
-            <a href="dsa-streak.html" title="DSA Streak 🔥">🔥</a>
-            <a href="aptitude-streak.html" title="Aptitude Streak 📈">📈</a>
-          </div>
-
-          <!-- Login/Profile Link -->
-          <div class="profile">
-            <a href="login.html">Login</a>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <my-nav></my-nav>
 
     <!-- ======= Main Layout ======= -->
 
-    <div class="container">
+    <div class="logReg-container">
       <div class="left-panel">
         <header class="header">
           <div class="logo-container">
@@ -117,7 +85,7 @@
               </div>
               <a href="#" class="forgot-password">Forgot Password?</a>
             </div>
-            <button type="submit" class="login-button">Login</button>
+            <button type="submit" class="login-button" id="loginCommit" onclick="location.href='index.html'">Login</button>
           </form>
 
           <div class="divider">
@@ -127,7 +95,7 @@
           <div class="social-login">
             <button class="social-button google">
               <img
-                src="/image/download (8).jpeg"
+                src="/assets/download (8).jpeg"
                 alt="Google icon"
                 class="social-icon"
               />
@@ -135,7 +103,7 @@
             </button>
             <button class="social-button facebook">
               <img
-                src="/image/Facebook Icon Design On Transparent Background Png 3.jpeg"
+                src="/assets/Facebook Icon Design On Transparent Background Png 3.jpeg"
                 alt="Facebook icon"
                 class="social-icon"
               />
@@ -152,9 +120,34 @@
     </div>
 
     <!-- ======= Footer ======= -->
-    <footer>&copy; 2025 PrepMate. Built by students, for students.</footer>
+    <my-foot></my-foot>
 
     <!-- ======= External JavaScript ======= -->
     <script src="js/loginreg.js"></script>
+    <script src="js/nav.js"></script>
+
+    <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const loginTrigger = document.getElementById("loginCommit");
+
+      if (loginTrigger) {
+        loginTrigger.addEventListener("click", (e) => {
+          e.preventDefault(); // prevent form submission for demo
+
+          // Save login status
+          sessionStorage.setItem("isLoggedIn", "true");
+
+
+          // Update the navbar if it exists
+          setTimeout(() => {
+            const nav = document.querySelector("my-nav");
+            if (nav && typeof nav.showProfile === "function") {
+              nav.showProfile();
+            }
+          }, 0);
+        });
+      }
+    });
+  </script>
   </body>
 </html>

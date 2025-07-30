@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrepMate - Aptitude</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="assets/Fav-icon-1.png">
+  <link rel="stylesheet" href="css/aptitude.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <my-nav></my-nav>
+
+  <!-- Main Content -->
+  <main class=" bg-green-500 flex items-center justify-center py-20 px-10">
+    <div class="bg-white shadow-md rounded-lg p-10 w-full max-w-2xl">
+      <h1 class="text-2xl font-bold text-center text-green-600 mb-6">
+      <i class="fa-solid fa-brain text-blue-700"></i> Aptitude Streak – Daily Challenge
+      </h1>
+
+      <!-- Question -->
+      <div id="questionBox" class="mb-4 text-lg font-medium"></div>
+
+      <!-- Options -->
+      <div id="optionsBox" class="space-y-2 mb-6"></div>
+
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <button
+          id="submitBtn"
+          class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded"
+        >
+          Submit
+        </button>
+        <button
+          id="toggleSolution"
+          class="bg-gray-800 hover:bg-green-700 text-white px-6 py-2 rounded"
+        >
+          Show Solution
+        </button>
+      </div>
+
+      <!-- Solution -->
+      <div id="solutionBox" class="hidden mt-6 p-4 bg-green-600 text-white rounded">
+        <h3 class="font-semibold mb-2">Solution:</h3>
+        <p id="solutionText" class="text-sm"></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <my-foot></my-foot>
+
+  <!-- JS Scripts -->
+   <script src="js/aptitude-streakData.js"></script>
+   <script src="js/aptitude-streak.js"></script>
+  <script src="js/nav.js"></script>
+  
+</body>
+</html>

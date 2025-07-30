@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Profile Dashboard</title>
+  <link rel="stylesheet" href="css/profile.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="assets/Fav-icon-1.png">
+</head>
+<body>
+
+  <!--Header section-->
+
+  <my-nav></my-nav>    
+
+  <!--Profile Details-->
+  <div class="hy_6">
+  <div class="profile-container">
+    <div class="profile-card">
+      <img src="assets/avatar.jpeg" alt="Avatar" class="avatar" id="avatar-img" />
+      <div class="profile-info">
+        <h2 id="name">Biprodip Das</h2>
+        <p id="username">@biprodip</p>
+        <p id="location">🏆 Rank: 1256 • 🌍 Global Score: 8950 • 🇮🇳 India</p>
+        <p>🔥 Coding Streak: <strong id="coding-streak">18 days</strong></p>
+        <p>📈 Aptitude Streak: <strong id="aptitude-streak">10 days</strong></p>
+        <button id="edit-btn" class="edit-button">Edit Profile</button>
+      </div>
+      <div class="circular-progress">
+        <svg viewBox="0 0 36 36" class="circular-chart green">
+          <path class="circle-bg"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
+          <text x="18" y="20.35" class="percentage">75%</text>
+        </svg>
+        <p class="solved-text">Total Solved: 140</p>
+      </div>
+    </div>
+      <!-- Yearly Summary -->
+       <section class="yearly-summary">
+    <h2>📅 Yearly Badges & Summary</h2>
+    <div class="year-list" id="year-list"></div>
+  </section>
+  </div>
+ 
+ </div>
+
+
+
+  <!-- Edit Modal -->
+  <div id="edit-modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Edit Profile</h3>
+      <label>Name: <input type="text" id="edit-name"></label>
+      <label>Username: <input type="text" id="edit-username"></label>
+      <label>Country: <input type="text" id="edit-country"></label>
+      <label>Upload Avatar: <input type="file" id="edit-avatar-file" accept="image/*"></label>
+      <button id="save-btn">Save</button>
+      <button id="cancel-btn">Cancel</button>
+    </div>
+  </div>
+<!-- Problem Stats Section -->
+
+  <div class="dashboard-bottom">
+  <!-- Problem Stats & Charts -->
+  <div class="left-column">
+    <div class="stats-container">
+      <div class="stats-card">
+        <h3>Easy</h3>
+        <p><span id="easy-solved">1</span> / <span id="easy-total">200</span></p>
+      </div>
+      <div class="stats-card">
+        <h3>Medium</h3>
+        <p><span id="medium-solved">80</span> / <span id="medium-total">150</span></p>
+      </div>
+      <div class="stats-card">
+        <h3>Hard</h3>
+        <p><span id="hard-solved">30</span> / <span id="hard-total">50</span></p>
+      </div>
+    </div>
+    <div class="charts-container">
+      <div class="chart-card">
+        <svg class="circular-chart" viewBox="0 0 36 36" id="easy-chart">
+        <circle class="circle-bg" cx="18" cy="18" r="15.9155"></circle>
+      <circle class="circle-fg" cx="18" cy="18" r="15.9155"></circle>
+          <text class="chart-percentage" x="18" y="20.35">0%</text>
+        </svg>
+        <p>Easy Progress</p>
+      </div>
+      <div class="chart-card">
+        <svg class="circular-chart" viewBox="0 0 36 36" id="medium-chart">
+          <circle class="circle-bg" cx="18" cy="18" r="15.9155"></circle>
+          <circle class="circle-fg circle-fg1" cx="18" cy="18" r="15.9155"></circle>
+          <text class="chart-percentage" x="18" y="20.35">0%</text>
+        </svg>
+        <p>Medium Progress</p>
+      </div>
+      <div class="chart-card">
+        <svg class="circular-chart" viewBox="0 0 36 36" id="hard-chart">
+          <circle class="circle-bg" cx="18" cy="18" r="15.9155"></circle>
+          <circle class="circle-fg circle-fg2" cx="18" cy="18" r="15.9155"></circle>
+          <text class="chart-percentage" x="18" y="20.35">0%</text>
+        </svg>
+        <p>Hard Progress</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Monthly Badges Section -->
+  <div class="badges-container">
+       <h3>🏅 Monthly Badges</h3>
+       <div class="badges-grid" id="badges-list">
+      <!-- Dynamically populated -->
+      
+    </div>
+     <div id="badges-months">
+         <p>&nbsp; January</p>
+         <p>February</p>
+          <p>March</p>
+     </div>
+  </div>
+  </div>
+    
+  <!--Streak-->
+  <div class="dual-streak-container">
+    <!-- Coding Streak Card -->
+    <div class="streak-card" id="coding-card">
+      <div class="fire-icon">🔥</div>
+        <p style="font-size: 1.2rem;">You're on fire! Keep going!</p>
+      <h2 id="coding-month-label"  style="
+      text-align: center; margin-bottom: 10px;">Month Year</h2>
+      <div class="calendar-header">
+        <div>Su</div><div>Mo</div><div>Tu</div><div>We</div>
+        <div>Th</div><div>Fr</div><div>Sa</div>
+      </div>
+      <div class="calendar-grid" id="coding-grid"></div>
+      <div class="summary">
+        <p>Current streak: <strong id="coding-current">0</strong> days</p>
+        <p>Longest streak: <strong id="coding-longest">0</strong> days</p>
+      </div>
+      <div class="nav-month">
+        <button id="coding-prev">‹</button>
+        <button id="coding-next">›</button>
+      </div>
+    </div>
+    <!-- Aptitude Streak Card -->
+    <div class="streak-card" id="aptitude-card">
+      <div class="fire-icon">🧠</div>
+       <p style="font-size: 1.2rem;">You're on fire! Keep going!</p>
+      <h2 id="aptitude-month-label" style="
+      text-align: center; margin-bottom: 10px;">Month Year</h2>
+      <div class="calendar-header">
+        <div>Su</div><div>Mo</div><div>Tu</div><div>We</div>
+        <div>Th</div><div>Fr</div><div>Sa</div>
+      </div>
+      <div class="calendar-grid" id="aptitude-grid"></div>
+      <div class="summary">
+        <p>Current streak: <strong id="aptitude-current">0</strong> days</p>
+        <p>Longest streak: <strong id="aptitude-longest">0</strong> days</p>
+      </div>
+      <div class="nav-month">
+        <button id="aptitude-prev">‹</button>
+        <button id="aptitude-next">›</button>
+      </div>
+    </div>
+  </div>
+
+
+<!--Recent Solved Problems-->
+<section class="recent-section">
+  <h2>📜 Recent Solved Problems</h2>
+  <ul class="problem-list" id="problem-list">
+  </ul>
+</section>
+<!--footer-->
+    <my-foot></my-foot>
+
+  <script src="js/profile.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

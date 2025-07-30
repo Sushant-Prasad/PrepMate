@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrepMate - Start Your Journey with DSA</title>
+    <link rel="stylesheet" href="./css/DsaPage.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="assets/Fav-icon-1.png">
+</head>
+
+<body>
+
+    <my-nav></my-nav>
+
+    <!-- ✅ Main DSA Layout -->
+    <main class="dsa-container">
+
+        <!-- 🧭 Sidebar -->
+        <aside class="sidebar" aria-label="DSA Topics Sidebar">
+            <div class="openClose">
+                <button class="toggle-btn" onclick="toggleSidebar()">
+                    <i class="fas fa-bars" id="open" style="position: absolute; color: black; cursor: pointer;"></i>
+                    <p id="close" style="visibility: hidden; cursor: pointer;">X</p>
+                </button>
+            </div>
+            <h3>DSA Topics</h3>
+            <ul id="topics-list">
+                <li onclick="loadTopic('fundamentals')">Programming Fundamentals</li>
+                <li onclick="loadTopic('basic-ds')">Basic Data Structures</li>
+                <li onclick="loadTopic('trees')">Trees</li>
+                <li onclick="loadTopic('recursion')">Recursion & Backtracking</li>
+                <li onclick="loadTopic('hashing')">Hashing</li>
+                <li onclick="loadTopic('sliding-window')">Sliding Window & Two Pointer</li>
+                <li onclick="loadTopic('searching-sorting')">Searching & Sorting</li>
+                <li onclick="loadTopic('greedy')">Greedy Algorithms</li>
+                <li onclick="loadTopic('dp')">Dynamic Programming</li>
+                <li onclick="loadTopic('graph')">Graph Algorithms</li>
+                <li onclick="loadTopic('cp')">Competitive Programming</li>
+            </ul>
+        </aside>
+
+        <!-- 📚 Dynamic Content Area -->
+        <section class="topic-content" id="topic-content" aria-live="polite">
+
+            <div class="motivation-quote">
+                <h2>🚀 Stay Consistent!</h2>
+                <p>“Practice doesn’t make perfect. <span class="highlight">Practice makes progress.</span>”</p>
+            </div>
+
+
+
+            <!-- Popular Sheets Section -->
+            <div class="popular-sheets">
+                <h3>📚 Popular DSA Sheets</h3>
+                <div class="sheet-grid">
+                    <div class="sheet-card">
+                        <img src="https://assets.leetcode.com/static_assets/public/icons/favicon-32x32.png"
+                            alt="Striver Sheet">
+                        <h4>Striver A-Z Sheet</h4>
+                        <p>Complete roadmap for DSA from basic to advanced.</p>
+                        <a href="https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/"
+                            target="_blank">Open Sheet</a>
+                    </div>
+
+                    <div class="sheet-card">
+                        <img src="https://www.geeksforgeeks.org/favicon.ico" alt="GFG Sheet">
+                        <h4>Love Babbar 450 Sheet</h4>
+                        <p>Handpicked 450 questions to crack interviews.</p>
+                        <a href="https://450dsa.com/" target="_blank">Open Sheet</a>
+                    </div>
+
+                    <div class="sheet-card">
+                        <img src="https://favicon.yandex.net/favicon/v2/leetcode.com" alt="Leetcode Sheet">
+                        <h4>LeetCode 75</h4>
+                        <p>75 essential LeetCode problems for interviews.</p>
+                        <a href="https://leetcode.com/list/xi4ci4ig/" target="_blank">Open Sheet</a>
+                    </div>
+
+                    <div class="sheet-card">
+                        <img src="https://www.codingninjas.com/favicon.ico" alt="CN Sheet">
+                        <h4>Coding Ninjas Sheet</h4>
+                        <p>DSA sheet curated by experts at Coding Ninjas.</p>
+                        <a href="https://www.codingninjas.com/studio/library/top-100-dsa-interview-questions"
+                            target="_blank">Open Sheet</a>
+                    </div>
+
+                    <div class="sheet-card">
+                        <img src="https://favicon.yandex.net/favicon/v2/codeforces.com" alt="CF Sheet">
+                        <h4>Codeforces A2OJ Ladder</h4>
+                        <p>Competitive Programming practice ladders.</p>
+                        <a href="https://a2oj.com/Ladders.html" target="_blank">Open Sheet</a>
+                    </div>
+
+                    <div class="sheet-card">
+                        <img src="https://favicon.yandex.net/favicon/v2/interviewbit.com" alt="IB Sheet">
+                        <h4>InterviewBit Sheet</h4>
+                        <p>Topic-wise interview preparation questions.</p>
+                        <a href="https://www.interviewbit.com/courses/programming/" target="_blank">Open Sheet</a>
+                    </div>
+
+                    <div class="sheet-card">
+                        <img src="https://www.tufing.com/favicon.ico" alt="Custom Sheet">
+                        <h4>100+ DSA Problems</h4>
+                        <p>Best of the best DSA problems from various sheets.</p>
+                        <a href="https://docs.google.com/spreadsheets/d/1WhhA6Q7A5_t95bW9HTmPQkT8wDIDKd3C3Vq81p1NbsU"
+                            target="_blank">Open Sheet</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🔥 Daily DSA Practice Preview Section -->
+        <div class="horizontal-section-wrapper">
+            <div class="daily-practice">
+                <h3>🔥 Daily DSA Practice (PYQs) </h3>
+                <div class="practice-list-vertical">
+                    <div class="practice-card">
+                        <div class="practice-info">
+                            <h4>Two Sum</h4>
+                            <p class="difficulty easy">Easy</p>
+                        </div>
+                        <button onclick="window.location.href='dsa-streak.html'" class="solve-now-btn">Solve</button>
+                    </div>
+
+                    <div class="practice-card">
+                        <div class="practice-info">
+                            <h4>Longest Substring Without Repeating Characters</h4>
+                            <p class="difficulty medium">Medium</p>
+                        </div>
+                        <button onclick="window.location.href='dsa-streak.html'" class="solve-now-btn">Solve</button>
+                    </div>
+
+                    <div class="practice-card">
+                        <div class="practice-info">
+                            <h4>Merge Intervals</h4>
+                            <p class="difficulty medium">Medium</p>
+                        </div>
+                        <button onclick="window.location.href='dsa-streak.html'" class="solve-now-btn">Solve</button>
+                    </div>
+
+                    <div class="practice-card">
+                        <div class="practice-info">
+                            <h4>Longest Palindromic Substring</h4>
+                            <p class="difficulty hard">Hard</p>
+                        </div>
+                        <button onclick="window.location.href='dsa-streak.html'" class="solve-now-btn">Solve</button>
+                    </div>
+
+                    <div class="practice-card">
+                        <div class="practice-info">
+                            <h4>Binary Tree Level Order Traversal</h4>
+                            <p class="difficulty easy">Easy</p>
+                        </div>
+                        <button onclick="window.location.href='dsa-streak.html'" class="solve-now-btn">Solve</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- ✅ Footer -->
+    <my-foot></my-foot>
+
+    <!-- ✅ JavaScript -->
+    <script src="js/DsaPage.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>

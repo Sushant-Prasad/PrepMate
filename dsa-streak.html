@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DSA Streak - PrepMate</title>
+  <link rel="stylesheet" href="./css/DsaStreak.css"/>
+  <link rel="stylesheet" href="/css/style.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous"
+  />
+  <link rel="icon" type="image/x-icon" href="assets/Fav-icon-1.png">
+
+</head>
+<body>
+  <!-- ✅ Navbar -->
+  <my-nav></my-nav>
+
+  <!-- ✅ Main Content -->
+  <main class="main-container">
+    
+    <!-- 🔹 Problem Description -->
+    <section class="problem-section">
+      <h2>Delete Characters to Make Fancy String</h2>
+      <p><strong>Difficulty:</strong> Easy</p>
+      <p>
+        A fancy string is a string where no three consecutive characters are equal.
+        Given a string <code>s</code>, delete the minimum number of characters to make
+        <code>s</code> fancy. Return the final string after the deletion.
+      </p>
+      <div class="example">
+        <h4>Example 1:</h4>
+        <pre>
+Input: s = "leeetcode"
+Output: "leetcode"
+Explanation: Remove one 'e' to avoid three consecutive 'e'.
+        </pre>
+      </div>
+      <div class="example">
+        <h4>Example 2:</h4>
+        <pre>
+Input: s = "aaabaaaa"
+Output: "aabaa"
+        </pre>
+      </div>
+      <div class="constraints">
+        <h4>Constraints:</h4>
+        <ul>
+          <li><code>1 &lt;= s.length &lt;= 10⁵</code></li>
+          <li><code>s</code> consists only of lowercase English letters.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 🔹 Code Editor Section -->
+    <section class="editor-section">
+      <label for="languageSelect">Choose Language:</label>
+      <select id="languageSelect">
+        <option value="cpp">C++</option>
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+        <option value="javascript">JavaScript</option>
+      </select>
+
+      <textarea id="codeEditor" placeholder="Write your code here..."></textarea>
+      <button id="submitBtn">Submit</button>
+
+      <div class="output-section">
+        <h3>Output</h3>
+        <pre id="outputArea">// Your output will appear here</pre>
+      </div>
+
+      <div class="streak-counter">
+        🔥 Current Streak: <span id="streakCount">0</span> days
+      </div>
+    </section>
+  
+
+  </main>
+
+  <my-foot></my-foot>
+
+  <!-- ✅ Script -->
+  <script>
+    let streakCount = 0;
+
+    document.getElementById("submitBtn").addEventListener("click", () => {
+      const outputArea = document.getElementById("outputArea");
+      const selectedLang = document.getElementById("languageSelect").value;
+      const code = document.getElementById("codeEditor").value;
+
+      // Dummy output simulation
+      outputArea.textContent = `✅ Submitted in ${selectedLang.toUpperCase()}.\nYour code:\n${code}`;
+
+      // Streak increase
+      streakCount++;
+      document.getElementById("streakCount").textContent = streakCount;
+      document.getElementById("navbarStreak").textContent = streakCount;
+    });
+  </script>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

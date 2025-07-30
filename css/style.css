@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
 *,
 *::after,
 *::before{
@@ -13,6 +13,9 @@
 a,a:hover{
   text-decoration: none;
 }
+a:hover{
+  color:var(--hover-color) !important;
+}
 ul,ol{
   margin:0;
   padding: 0;
@@ -21,13 +24,12 @@ ul,ol{
 :root{
   --primary-color:#FFC107;
   --secondary-color:#0DCAF0;
-
-  --third-color:#f98169;
+  --third-color:#0f766e;
   --hover-color:#e70c7d;
   --bg-color:#D5EFFA;
   --bg2-color:#FFFFFF;
   --white-color:#fff;
-  --text-color:#0f766e;
+  --text-color:#555;
   --text-gray:#999;
   --black-color:#000;
   --primary-font: 'roboto','sans-serif';
@@ -49,96 +51,136 @@ body {
   font-size: 100%;
   font-weight: 400;
   background: #f0f4f8;
-  color: var(--text-color);
+  color: #333;
 }
-header {
+/* header {
+  width: 100%;
+} */
+
+/* navbar */
+#logo{
+  height: 140px;
+  width: auto;
+  margin: auto 0;
+}
+
+     /* footer  */
+footer {
+  width: 100%;
+  background-color: #424c5f;
+  padding: .2rem;
+  color: white;
+  text-align: center;
+}
+
+.footer-container {
   width: 100%;
 }
 
-/* navbar */
-.navbar {
-  background-color: #fff;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
-  z-index: 1000;
-  position: sticky;
-  top: 0;
+.footer-section {
+  width: 100%;
+  margin: .2rem;
 }
 
-
-.logo a {
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #065851;
+.footer-section h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-.nav-links {
+.footer-section ul {
   list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin-left: 1rem;
+  padding: 0;
 }
 
-.nav-links a {
-  text-decoration: none;
-  font-weight: 600;
-  color: var(--text-color);
+.footer-section ul li {
+  margin: 0.5rem 0;
   font-size: 20px;
 }
 
-.nav-links a:hover {
+.footer-section a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-section a:hover {
   color: #0d6efd;
 }
 
-.right-nav {
+.social-media {
+  width: 40%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.social-media li {
+  margin-left: 0;
+}
+
+.social-media i{
+    margin-right: 10px;
+}
+
+#facebook:hover{
+  color: #0d6efd;
+}
+
+#x:hover{
+  color: black;
+}
+
+#youtube:hover{
+  color: red;
+}
+
+#instagram:hover{
+  color: purple;
+}
+
+.foot-info{
+  width: 30%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 1.2rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-/* Search bar */
-.search-bar input {
-  padding: 6px 12px;
-  border: 2px solid var(--text-color);
-  border-radius: 6px;
-  outline: none;
-  width: 200px;
+.copyright{
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
-/* Streak icons */
-.streaks span {
-  font-size: 1.2rem;
-  margin: 0 4px;
-  cursor: default;
+
+
+
+@media (max-width: 1200px){
+  .social-media{
+    width: 70%;
+  }
+  .foot-info{
+    width: 60%;
+  }
 }
 
-/* Profile/Login */
-.profile a {
-  background-color: #0d6efd;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.profile a:hover {
-  background-color: #0b5ed7;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #000000;
-  font-size: 0.9rem;
-  color: #ffffff;
-  z-index: 999;
+@media (max-width: 700px){
+  footer{
+    padding: 0;
+    width: 100%;
+  }
+  .footer-section{
+    margin: 0;
+    padding: 1rem 0;
+  }
+  .foot-info{
+    width: 90%;
+  }
+  .social-media{
+    width: 35%;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 auto;
+  }
 }
