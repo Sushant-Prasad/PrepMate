@@ -40,7 +40,7 @@ class MyNav extends HTMLElement {
           <!-- Login - Desktop -->
           <div class="hidden lg:block">
             <button class="bg-green-500 hover:bg-green-700 text-white px-4 py-2 rounded-md" id="loginButton"><a href="login.html">Login</a></button>
-            <a href="profile.html"><img src="assets/profile.jpg" class="h-10 w-10 rounded-full hidden" id="profile"/></a>
+            <a href="Profile.html"><img src="assets/profile.jpg" class="h-10 w-10 rounded-full hidden" id="profile"/></a>
           </div>
 
           <!-- Mobile Menu Button -->
